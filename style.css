@@ -8,16 +8,6 @@ section {
   height: 100vh;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky+.content {
-    padding-top: 60px;
-  }
-
 .hero {
   position: relative;
   width: 100%;
@@ -25,16 +15,27 @@ section {
   background-color: #ffffff;
 }
 
+.contet{
+  padding: 16px;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.contet{
+  padding-top: 60px;
+}
+
 nav {
   display: flex;
   width: 100%;
   height: 10%;
-  margin: auto;
-  padding: 20px 0;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-top: 0;
 }
 
 nav img {
@@ -62,6 +63,7 @@ nav ul li a:hover {
   font-size: 2em;
   display: block;
   text-align: center;
+  align-items: center;
   margin: 0 auto;
   letter-spacing: 0.1em;
   border-right: solid 2px #48335E;
@@ -115,7 +117,7 @@ nav ul li a:hover {
   width: 45%;
   height: 50%;
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   right: 5%;
 }
 
@@ -149,7 +151,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(33.33% - 2rem); /* adjust the width based on the number of columns you want */
+  width: calc(33.33% - 2rem);
   height: 200px;
 }
 
@@ -170,10 +172,11 @@ nav ul li a:hover {
 
 
 .wrapper {
-  width: 90%;
+  width: 70%;
   height: 100vh;
   margin: 0 auto;
   max-width: 80rem;
+  padding-top: 100px;
 }
 
 .cols {
@@ -223,9 +226,9 @@ nav ul li a:hover {
 
 .back {
   background: #cedce7;
-  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+  background: -webkit-linear-gradient(45deg, #cedce7 0%, #82438C 100%);
+  background: -o-linear-gradient(45deg, #cedce7 0%, #82438C 100%);
+  background: linear-gradient(45deg, #cedce7 0%, #82438C 100%);
 }
 
 .front:after {
@@ -350,9 +353,9 @@ nav ul li a:hover {
 
 #contact .contact {
   flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
+  padding-top: 100px;
 }
 
 #contact .contact-title {
@@ -373,8 +376,8 @@ nav ul li a:hover {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  padding: 30px;
-  margin: 30px;
+  padding: 10px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,7 +386,7 @@ nav ul li a:hover {
 }
 
 #contact .icon {
-  width: 70px;
+  width: 50px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -399,3 +402,4 @@ nav ul li a:hover {
   line-height: 2rem;
   font-weight: 500;
 }
+
