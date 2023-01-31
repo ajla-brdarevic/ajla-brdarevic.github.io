@@ -8,7 +8,7 @@ section {
   height: 100vh;
 }
 
-/*.sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,7 +16,7 @@ section {
   
   .sticky+.content {
     padding-top: 60px;
-  }*/
+  }
 
 .hero {
   position: relative;
@@ -27,11 +27,19 @@ section {
 
 nav {
   display: flex;
-  width: 84%;
+  width: 100%;
+  height: 10%;
   margin: auto;
   padding: 20px 0;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+top: 0;
+}
+
+nav img {
+  height: 10vh;
+  margin-left: 4%;
 }
 
 nav ul li {
@@ -98,8 +106,8 @@ nav ul li a:hover {
   height: 200px;
   width: 500px;
   text-align: justify;
-  font-size: large;
-  letter-spacing: 0.2rem;
+  font-size: 2vh;
+  letter-spacing: 0.1rem;
   margin: 0;
 }
 
