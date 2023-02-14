@@ -424,6 +424,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     background-color: white;
+    justify-content: center;
   }
 
   nav img {
@@ -475,4 +476,5 @@ nav ul li a:hover {
     margin-top: 20%;
     margin-left: 18%;
   }
+
 }
