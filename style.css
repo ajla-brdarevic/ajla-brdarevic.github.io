@@ -161,6 +161,11 @@ nav ul li a:hover {
   height: 200px;
 }
 
+.card p{
+  text-align: justify;
+  width: 300px;
+}
+
 .card figure img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
