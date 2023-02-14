@@ -387,7 +387,7 @@ nav ul li a:hover {
 }
 
 #contact .contact-item {
-  width: 95%;
+  width: 97%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -448,7 +448,7 @@ nav ul li a:hover {
 
 
   .details p {
-    width: 70%;
+    width: 80%;
     margin-top: -10%;
     align-items: center;
     clear: both;
