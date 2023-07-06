@@ -17,7 +17,7 @@ section {
 
 .contet {
   padding: 16px;
-}
+} 
 
 .sticky {
   position: fixed;
@@ -57,13 +57,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #691F6E;
 }
 
 nav ul li a:hover {
   color: #873D8C;
 }
 
+/*spustiti malo dole*/
 .ajla {
   color: #691F6E;
   font-size: 2em;
@@ -410,6 +411,7 @@ nav ul li a:hover {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
+
 }
 
 #contact .contact-info h2 {
@@ -417,6 +419,7 @@ nav ul li a:hover {
   line-height: 2rem;
   font-weight: 500;
 }
+
 
 @media screen and (max-width: 1100px) {
   nav {
