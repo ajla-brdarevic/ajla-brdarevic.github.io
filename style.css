@@ -6,6 +6,7 @@
 
 section {
   height: 100vh;
+  background-color: #f9f9f9;
 }
 
 .hero {
@@ -364,60 +365,50 @@ nav ul li a:hover {
 }
 
 #contact {
-  padding-top: 100px;
-  height: 100vh;
+  background-color: #f9f9f9;
 }
 
-#contact .contact {
-  flex-direction: column;
-  width: 90%;
-  padding-top: 100px;
-}
-
-#contact .contact-title {
-  font-size: 4rem;
-  font-weight: 300;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  text-align: center;
-}
-
-#contact .contact-items {
-  width: 100%;
-}
-
-#contact .contact-item {
-  width: 97%;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+.contact-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 18px 0 #0000002c;
 }
 
-#contact .icon {
-  width: 50px;
-  margin: 0 auto;
+.contact-items {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+.contact-item {
+  margin: 30px 0;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  margin-bottom: 15px;
+}
+
+.contact-info h1 {
+  font-size: 20px;
+  color: #333333;
   margin-bottom: 10px;
 }
 
-#contact .contact-info h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 5px;
-
-}
-
-#contact .contact-info h2 {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  font-weight: 500;
+.contact-info h2 {
+  font-size: 16px;
+  color: #777777;
 }
 
 
