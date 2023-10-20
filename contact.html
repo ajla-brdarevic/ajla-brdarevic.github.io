@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajla Brdarević Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png">
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="contact">
+
+        <div class="pdf-container">
+            <a href="https://drive.google.com/file/d/1csA945UgwPWI19lutoAv_xOxws0QgCGe/view?usp=sharing"
+                target="_blank">
+                <div class="icon"><img src="download.png" /></div>
+                <div class="contact-info">
+                    <h1>CV</h1>
+                    <h2>Download</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-items">
+                <a href="mailto:ajlabrdarevic@gmail.com" target="_blank">
+                <div class="contact-item">
+                    <div class="icon"><img src="email.png" /></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>ajlabrdarevic@gmail.com</h2>
+                    </div>
+                </div>
+            </a>
+
+                <a href="https://linkedin.com/in/ajla-brdarević" target="_blank">
+                    <div class="contact-item">
+                        <div class="icon"><img src="linkedin.png" /></div>
+                        <div class="contact-info">
+                            <h1>LinkedIn</h1>
+                            <h2>Ajla Brdarević</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/ajla-brdarevic" target="_blank">
+                    <div class="contact-item">
+                        <div class="icon"><img src="github.png" /></div>
+                        <div class="contact-info">
+                            <h1>GitHub</h1>
+                            <h2>ajla-brdarevic</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+
+    window.addEventListener("scroll", myFunction);
+</script>
