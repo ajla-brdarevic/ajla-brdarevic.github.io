@@ -3,330 +3,66 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajla Brdarević</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="hero">
     <nav>
-      <img src="logo.png">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#cards">ABOUT ME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <section id="home">
-      <div class="ajla">
-        <p>AJLA BRDAREVIĆ</p>
-      </div>
-      <div class="details">
-        <p>Hi, I am Ajla Brdarević, a driven and innovative software engineer student finishing my studies at the
-          Polytechnic Faculty in Zenica, Bosnia and Herzegovina. I am eager to apply my skills and passion to real-world
-          software engineering challenges and make a positive impact in the industry.
-
-          Throughout my studies, I have not only gained valuable technical knowledge but also developed a range of
-          important soft skills through my volunteer work with various youth organizations. I am still exploring
-          different areas of software engineering that interest me.
-
-          I believe that this portfolio is a testament to my dedication, hard work, and desire to continue growing as a
-          software engineer.
-          I am confident that my passion and skills, combined with my commitment to excellence, will allow me to make a
-          meaningful contribution to any software engineering team. Let's create something amazing together!</p>
-      </div>
-      <div class="images">
-        <img src="background.png" class="shape">
-        <img src="image.png" class="image">
-      </div>
   </div>
-  </section>
 
-  <section id="cards" class="cards">
+  <section id="home">
+    <div class="ajla">
+      <p>AJLA BRDAREVIĆ</p>
+    </div>
+    <div class="details">
+      <p>Hi, I am Ajla Brdarević, a driven and innovative software engineer student finishing my studies at the
+        Polytechnic Faculty in Zenica, Bosnia and Herzegovina. I am eager to apply my skills and passion to real-world
+        software engineering challenges and make a positive impact in the industry.
 
-    <article class="card">
-      <figure><img src="personal.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>About me</h3>
-        <p>I believe personal development is crucial for career growth, in addition to technical knowledge.
-          Extracurricular activities taught me the value of soft skills and balancing professional pursuits with leisure
-          activities. My skill set encompasses not only technical competencies, but also other interests, although often
-          unrelated to my future profession, which have aided me in informal personal growth.</p>
-      </ul>
-    </article><!-- /card-one -->
+        Throughout my studies, I have not only gained valuable technical knowledge but also developed a range of
+        important soft skills through my volunteer work with various youth organizations. I am still exploring
+        different areas of software engineering that interest me.
 
-    <article class="card">
-      <figure><img src="hard.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>Hard skills</h3>
-        <li>Languages - C++, JavaScript, Java, <br>C#, Python</li>
-        <li>Web development - Java Spring Boot, <br>Node.js</li>
-        <li>Mobile development - .NET MAUI</li>
-        <li>Database management - MySql</li>
-        <li>Version controle - Git, GitHub</li>
-        <li>Embadded systems - Arduino</li>
-        <li>Testing and debugging</li>
-        <li>Scrum</li>
-      </ul>
-    </article><!-- /card-one -->
-
-    <article class="card">
-      <figure><img src="soft.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>Soft skills</h3>
-        <li>Communication</li>
-        <li>Collaboration</li>
-        <li>Problem solving</li>
-        <li>Time management</li>
-        <li>Adaptability</li>
-        <li>Creativity</li>
-        <li>Teamwork</li>
-      </ul>
-    </article><!-- /card-two -->
-
-
-
-    <article class="card">
-      <figure><img src="achievemnts.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>Achievements</h3>
-        <li>"Reconnect" Hackathon, 2nd place, <br>Zenica 2022 <br>Mobile app - Time for a challenge</li>
-        <li>"Moscow International Festival of <br>Slavic Music" <br>Special Price, Moscow 2014, Ballet</li>
-      </ul>
-    </article><!-- /card-four -->
-
-    <article class="card">
-      <figure><img src="organizations.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>Extracurricular activities</h3>
-        <li>European Youth Parliament</li>
-        <li>AIESEC</li>
-        <li>City debate club "Agora"</li>
-        <li>Primary music and ballet school "Amadeus"</li>
-      </ul>
-    </article><!-- /card-four -->
-
-    <article class="card">
-      <figure><img src="hobby.png" width="200px" height="200px"></figure>
-      <ul>
-        <h3>Hobbies</h3>
-        <li>Learning new languages</li>
-        <li>Learning to crochet</li>
-        <li>Reading books</li>
-        <li>Ballet and playing the violin, the guitar <br>and piano</li>
-      </ul>
-    </article><!-- /card-four -->
-
-  </section>
-
-  <section id="projects">
-
-    <div class="wrapper">
-
-      <div class="cols">
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(foodapp.jpg)">
-              <div class="inner">
-                <p>Really Fast Food App</p>
-                <span>.NET MAUI</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <a href="https://github.com/ajla-brdarevic/ReallyFastFoodApp">Really Fast Food App</a>
-                <p>School project in the subject of Mobile Application Development in .NET MAUI - Food Delivery
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(yummy.jpg)">
-              <div class="inner">
-                <p>Yummy</p>
-                <span>.NET MAUI</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <a href="https://github.com/ajla-brdarevic/Yummy">Yummy</a>
-                <p>School project in the subject of Mobile Application Development in .NET MAUI - Recipes App
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(hackathon.webp)">
-              <div class="inner">
-                <p>Time for a challenge</p>
-                <span>Figma, Swift</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <p>A project from the "Reconnect" hackathon - an idea for a mobile application that will connect people
-                  after the pandemic
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(itgirls.png)">
-              <div class="inner">
-                <p>My Small Bussiness</p>
-                <span>Web Design</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <a href="https://github.com/ajla-brdarevic/IT-Girls-web-page">IT Girls Web Page Workshop</a>
-                <p>Small Web Page - project for IT Girls Bosnia and Herzegovina
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(zalihe.png)">
-              <div class="inner">
-                <p>Event tracking system</p>
-                <span>Java Spring Boot</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <a href="https://github.com/ajla-brdarevic/dogadjaji_219">Event System</a>
-                <p>Web programming school project
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(dogadjaji.png)">
-              <div class="inner">
-                <p>Inventory system management</p>
-                <span>Node, React, Express, MySql</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <a href="https://github.com/ajla-brdarevic/webzalihe_219">Inventory System</a>
-                <p>Web programming school project
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(music.png)">
-              <div class="inner">
-                <p>Music Player</p>
-                <span>Figma</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <p>Project from the subject Development of user interfaces - Design for music player.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" ontouchstart="this.classList.toggle('hover');">
-          <div class="container">
-            <div class="front" style="background-image: url(home.jfif)">
-              <div class="inner">
-                <p>Smart House</p>
-                <span>Arduino, IoT</span>
-              </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <p>Smart House
-                <p>Bachelor Diploma thesis - Arduino Smart House with remote control via IoT. Soon...
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        I believe that this portfolio is a testament to my dedication, hard work, and desire to continue growing as a
+        software engineer.
+        I am confident that my passion and skills, combined with my commitment to excellence, will allow me to make a
+        meaningful contribution to any software engineering team. Let's create something amazing together!</p>
+    </div>
+    <div class="images">
+      <img src="images/background.png" class="shape">
+      <img src="images/image.png" class="image">
+    </div>
     </div>
   </section>
-
-  <section id="contact">
-    <div class="contact-container">
-
-      <div class="contact-items">
-
-        <div class="contact-item">
-          <div class="icon"><img src="email.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>ajlabrdarevic@gmail.com</h2>
-          </div>
-        </div>
-
-        <a href="https://linkedin.com/in/ajla-brdarević" target="_blank">
-          <div class="contact-item">
-            <div class="icon"><img src="linkedin.png" /></div>
-            <div class="contact-info">
-              <h1>LinkedIn</h1>
-              <h2>Ajla Brdarević</h2>
-            </div>
-          </div>
-        </a>
-
-
-        <a href="https://github.com/ajla-brdarevic" target="_blank">
-          <div class="contact-item">
-            <div class="icon"><img src="github.png" /></div>
-            <div class="contact-info">
-              <h1>GitHub</h1>
-              <h2>ajla-brdarevic</h2>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const navbar = document.querySelector("nav");
-    const sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-
-    window.addEventListener("scroll", myFunction);
-  </script>
 </body>
 
 </html>
+
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+
+  window.addEventListener("scroll", myFunction);
+</script>
