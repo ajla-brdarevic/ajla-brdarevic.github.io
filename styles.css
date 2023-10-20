@@ -103,6 +103,7 @@ nav img {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
+  margin-top: 4%;
   animation: type 2s steps(14) 1s forwards,
     blink 1s linear 1s infinite;
 }
@@ -412,4 +413,6 @@ nav img {
 }
 }
 
-@media (min-width: 993px) {}
+@media (min-width: 993px) {
+
+}
