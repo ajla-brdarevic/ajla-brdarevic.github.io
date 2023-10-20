@@ -240,7 +240,7 @@ nav img {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+    background-color: #FEFEDF;
   }
 
   .navbar.active {
@@ -311,7 +311,7 @@ nav img {
     top: 100%;
     /* Promenili smo top vrednost na 80px */
     left: 0;
-    background-color: white;
+    background-color: #FEFEDF;
   }
 
   .navbar.active {
