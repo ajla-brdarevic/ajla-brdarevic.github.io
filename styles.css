@@ -11,13 +11,7 @@ li {
 
 /* Stilizacija glavnog sadržaja */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #FEFEDF;
-}
-
-section {
-  height: 100vh;
-  background-color: #FEFEDF;
+  font-family: 'Karla', sans-serif;    
 }
 
 .hero {
@@ -89,6 +83,45 @@ nav img {
   color: #873D8C;
 }
 
+.btn {
+  top: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  align-items: center;
+}
+.btn:focus { outline-style: none; }
+
+.light-theme {
+  background-color: #FEFEDF;
+  --btnBg: #4A4E69;
+  --btnFontColor: #C1A5A9;
+}
+
+.dark-theme {
+  background-color: #4A4E69;
+  color: #C1A5A9;
+  --btnBg: #C1A5A9;
+  --btnFontColor: #4A4E69;
+}
+
+/* Dodajte ova pravila za promjenu boje navbara u Dark Mode-u */
+.dark-theme nav {
+  background-color: #4A4E69; /* Promijenite ovu boju prema vašim željama */
+}
+
+.dark-theme .navbar a {
+  color: #fff; /* Promijenite ovu boju prema vašim željama */
+}
+
+.dark-theme .navbar a:hover {
+  color: #eee; /* Promijenite ovu boju prema vašim željama */
+}
+
+
 .ajla {
   color: #691F6E;
   font-size: 2em;
@@ -109,7 +142,7 @@ nav img {
 
 @keyframes type {
   to {
-    width: 18ch
+    width: 15ch
   }
 }
 
@@ -170,11 +203,10 @@ nav img {
   left: 45%;
 }
 
+/*----------- PROJECTS-----------*/
+
 /*-----------CONTACT-----------*/
 
-#contact {
-  background-color: #FEFEDF;
-}
 
 .pdf-container {
   margin: auto;
@@ -311,7 +343,7 @@ nav img {
     top: 100%;
     /* Promenili smo top vrednost na 80px */
     left: 0;
-    background-color: #FEFEDF;
+    background-color: white;
   }
 
   .navbar.active {
@@ -412,6 +444,4 @@ nav img {
 }
 }
 
-@media (min-width: 993px) {
-
-}
+@media (min-width: 993px) {}

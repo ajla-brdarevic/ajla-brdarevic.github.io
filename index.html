@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajla Brdarević</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="light-theme">
   <div class="hero">
+    <div class="nav">
     <nav>
-      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <div>
+      <a href="index.html"><img src="logo.png" class="light-image" alt="Logo"></a>
+      <a href="index.html"><img src="logo_dark.jpg" class="dark-image" alt="Logo"></a>
+    </div>
       <div class="menu-toggle">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -22,46 +29,37 @@
         <li><a href="aboutme.html">ABOUT ME</a></li>
         <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+        <li><button class="btn">Theme</button></li>
       </ul>
     </nav>
   </div>
+  </div>
 
-  <section id="home">
-    <div class="ajla">
-      <p>AJLA BRDAREVIĆ</p>
-    </div>
-    <div class="details">
-      <p>Hi, I am Ajla Brdarević, a driven and innovative software engineer student finishing my studies at the
-        Polytechnic Faculty in Zenica, Bosnia and Herzegovina. I am eager to apply my skills and passion to real-world
-        software engineering challenges and make a positive impact in the industry.
+  <div class="ajla">
+    <p>AJLA BRDAREVIĆ</p>
+  </div>
+  <div class="details">
+    <p>Hi, I am Ajla Brdarević, a driven and innovative software engineer student finishing my studies at the
+      Polytechnic Faculty in Zenica, Bosnia and Herzegovina. I am eager to apply my skills and passion to real-world
+      software engineering challenges and make a positive impact in the industry.
 
-        Throughout my studies, I have not only gained valuable technical knowledge but also developed a range of
-        important soft skills through my volunteer work with various youth organizations. I am still exploring
-        different areas of software engineering that interest me.
+      Throughout my studies, I have not only gained valuable technical knowledge but also developed a range of
+      important soft skills through my volunteer work with various youth organizations. I am still exploring
+      different areas of software engineering that interest me.
 
-        I believe that this portfolio is a testament to my dedication, hard work, and desire to continue growing as a
-        software engineer.
-        I am confident that my passion and skills, combined with my commitment to excellence, will allow me to make a
-        meaningful contribution to any software engineering team. Let's create something amazing together!</p>
-    </div>
-    <div class="images">
-      <img src="images/background.png" class="shape">
-      <img src="images/image.png" class="image">
-    </div>
-    </div>
-  </section>
+      I believe that this portfolio is a testament to my dedication, hard work, and desire to continue growing as a
+      software engineer.
+      I am confident that my passion and skills, combined with my commitment to excellence, will allow me to make a
+      meaningful contribution to any software engineering team. Let's create something amazing together!</p>
+  </div>
+  <div class="images">
+    <img src="background.png" class="shape">
+    <img src="image.png" class="image">
+  </div>
+  </div>
+
+  <script src="app.js"></script>
+
 </body>
 
 </html>
-
-
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navbar = document.querySelector('.navbar');
-
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-  });
-
-  window.addEventListener("scroll", myFunction);
-</script>
