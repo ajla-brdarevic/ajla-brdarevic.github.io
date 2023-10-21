@@ -16,37 +16,32 @@ function setThemeBasedOnDevicePreference() {
   }
 }
 
-// Funkcija za promjenu teme i obrtanje slika
 function switchTheme() {
   const switcher = document.querySelector('.btn');
-  switcher.addEventListener('click', function () {
-    document.body.classList.toggle('dark-theme');
-    toggleImagesVisibility(document.body.className);
-    changeNavbarColor(document.body.className);
-    // Dodajte ovu liniju za ažuriranje teksta na gumbu
-    updateSwitcherText();
-  });
-}
+  const body = document.body;
 
-// Funkcija za ažuriranje teksta na gumbu ovisno o trenutačnoj temi
-function updateSwitcherText() {
-  const className = document.body.className;
-  const switcher = document.querySelector('.btn');
-  if (className === 'light-theme') {
-    switcher.textContent = 'Theme';
+  if (body.classList.contains('light-theme')) {
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
   } else {
-    switcher.textContent = 'Theme';
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
   }
+
+  toggleImagesVisibility(body.className);
+  changeNavbarColor(body.className);
 }
 
-// Funkcija za promjenu boje navbara
+
 function changeNavbarColor(theme) {
   const nav = document.querySelector('nav');
 
   if (theme === 'dark-theme') {
-    nav.style.backgroundColor = '#4A4E69'; // Promijenite ovu boju prema vašim željama
+    nav.classList.remove('light-theme'); // Uklonite light-theme klasu
+    nav.classList.add('dark-theme'); // Dodajte dark-theme klasu
   } else {
-    nav.style.backgroundColor = '#FEFEDF'; // Vratite boju na Light Mode-u
+    nav.classList.remove('dark-theme'); // Uklonite dark-theme klasu
+    nav.classList.add('light-theme'); // Dodajte light-theme klasu
   }
 }
 
@@ -64,6 +59,7 @@ function toggleImagesVisibility(theme) {
   }
 }
 
+
 // Postavljanje teme na temelju postavki uređaja kada se stranica učita
 window.addEventListener('load', () => {
   setThemeBasedOnDevicePreference();
@@ -78,5 +74,3 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Postavite tekst na gumbu na temelju trenutačne teme kada se stranica učita
-updateSwitcherText();
