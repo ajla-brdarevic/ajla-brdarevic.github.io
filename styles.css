@@ -303,12 +303,14 @@ nav img {
 @media (max-width: 480px) {
   .navbar {
     display: none;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #FEFEDF;
+    z-index: 1000;
+    margin-top: 10vh;
   }
 
   .navbar.active {
@@ -320,8 +322,10 @@ nav img {
   }
 
   .navbar li {
-    display: block;
-    margin-bottom: 10px;
+    display: flex; /* Koristimo flex da bismo centrirali elemente */
+    align-items: center; /* Centriramo elemente vertikalno */
+    justify-content: center; /* Centriramo elemente horizontalno */
+    height: 15%; /* Podesite visinu elemenata prema potrebama */
   }
 
   .ajla {
@@ -372,19 +376,18 @@ nav img {
 @media (min-width: 481px) and (max-width: 768px) {
   .navbar {
     display: none;
-    /* Sakrijemo navigaciju */
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    /* Promenili smo top vrednost na 80px */
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #FEFEDF;
+    z-index: 1000;
+    margin-top: 10vh;
   }
 
   .navbar.active {
     display: block;
-    /* Prikažemo navigaciju kada je aktivna */
   }
 
   .menu-toggle {
@@ -392,8 +395,10 @@ nav img {
   }
 
   .navbar li {
-    display: block;
-    margin-bottom: 10px;
+    display: flex; /* Koristimo flex da bismo centrirali elemente */
+    align-items: center; /* Centriramo elemente vertikalno */
+    justify-content: center; /* Centriramo elemente horizontalno */
+    height: 15%; /* Podesite visinu elemenata prema potrebama */
   }
 
   .details p {
