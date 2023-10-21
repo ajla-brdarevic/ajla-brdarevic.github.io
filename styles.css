@@ -114,13 +114,17 @@ nav img {
 }
 
 .dark-theme .navbar a {
-  color: #fff; /* Promijenite ovu boju prema vašim željama */
+  color: #C1A5A9; /* Promijenite ovu boju prema vašim željama */
 }
 
 .dark-theme .navbar a:hover {
   color: #eee; /* Promijenite ovu boju prema vašim željama */
 }
 
+.dark-theme .ajla {
+  color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za Dark Mode */
+  animation: type-dark 2s steps(14) 1s forwards, blink-dark 1s linear 1s infinite;
+}
 
 .ajla {
   color: #691F6E;
@@ -146,6 +150,13 @@ nav img {
   }
 }
 
+@keyframes type-dark {
+  to {
+    width: 15ch;
+    color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za tekst u "Dark Mode-u" */
+  }
+}
+
 @keyframes blink {
   from {
     border-color: transparent
@@ -153,6 +164,20 @@ nav img {
 
   50% {
     border-color: #48335E
+  }
+
+  to {
+    border-color: transparent
+  }
+}
+
+@keyframes blink-dark {
+  from {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za "Dark Mode" */
   }
 
   to {
