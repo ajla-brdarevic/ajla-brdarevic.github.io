@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="stylesaboutme.css">
 </head>
 
-<body>
+<body class="light-theme">
     <div class="hero">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div>
+                <a href="index.html"><img src="logo.png" class="light-image" alt="Logo"></a>
+                <a href="index.html"><img src="logo_dark.jpg" class="dark-image" alt="Logo"></a>
+              </div>  
             <div class="menu-toggle">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -25,6 +28,7 @@
                 <li><a href="aboutme.html">ABOUT ME</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+                <li><button class="btn">Dark</button></li>
             </ul>
         </nav>
     </div>
@@ -257,19 +261,9 @@
             </article>
         </div>
     </div>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
-
-<script>
-
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
-
-    menuToggle.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
-
-    window.addEventListener("scroll", myFunction);
-
-</script>
