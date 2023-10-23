@@ -1,0 +1,282 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #FDF7FF;
+}
+
+section {
+    height: 100vh;
+    background-color: #FEFEDF;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-color: #FEFEDF;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky+.contet {
+    padding-top: 60px;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FEFEDF;
+    z-index: 100;
+}
+
+nav img {
+    height: 10vh;
+    margin-left: 4%;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #691F6E;
+}
+
+.dark-theme .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #C1A5A9;
+}
+
+.navbar {
+    float: right;
+    margin-right: 20px;
+}
+
+.dark-theme .navbar {
+    background-color: #4A4E69;
+
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #691F6E;
+}
+
+.navbar a:hover {
+    color: #873D8C;
+}
+
+.btn {
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    align-items: center;
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+.light-theme {
+    background-color: #FEFEDF;
+    --btnBg: #4A4E69;
+    --btnFontColor: #C1A5A9;
+}
+
+.dark-theme {
+    background-color: #4A4E69;
+    color: #C1A5A9;
+    --btnBg: #C1A5A9;
+    --btnFontColor: #4A4E69;
+}
+
+.dark-theme nav {
+    background-color: #4A4E69;
+}
+
+.dark-theme .navbar a {
+    color: #C1A5A9;
+}
+
+.dark-theme .navbar a:hover {
+    color: #eee;
+}
+
+.projects-container {
+    display: grid;
+    place-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.projects-row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3em;
+}
+
+.project {
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    position: relative;
+
+}
+
+.image {
+    width: 100%;
+    height: 40%;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: -4%;
+    color: black;
+}
+
+h5 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    text-align: justify;
+    max-width: 250px;
+    margin-left: 6%;
+    color: black;
+}
+
+a {
+    max-width: 80px;
+    align-items: center;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FEFEDF;
+        z-index: 1000;
+        margin-top: 10vh;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15%;
+    }
+
+    .projects-row {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FEFEDF;
+        z-index: 1000;
+        margin-top: 10vh;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15%;
+    }
+
+    .projects-row {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .projects-row {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+    }
+}
+
+@media (min-width: 993px) {}
