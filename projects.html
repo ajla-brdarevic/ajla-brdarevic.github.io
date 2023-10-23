@@ -4,14 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajla Brdarević Projects</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Projects Ajla Brdarević</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Karla&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projects.css">
 </head>
 
-<body>
+<body class="light-theme">
   <div class="hero">
     <nav>
-      <a href="index.html"><img src="logo.png" alt="Logo"></a>
+      <div>
+        <a href="index.html"><img src="images/logo.png" class="light-image" alt="Logo"></a>
+        <a href="index.html"><img src="images/logo_dark.jpg" class="dark-image" alt="Logo"></a>
+      </div>
       <div class="menu-toggle">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -22,9 +28,70 @@
         <li><a href="aboutme.html">ABOUT ME</a></li>
         <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+        <li><button class="btn">theme</button></li>
       </ul>
     </nav>
   </div>
 
-  </body>
-  </html>
+  <div class="projects-container">
+    <div class="projects-row">
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>Smart Home</h3>
+        <h5>Graduation thesis</h5>
+        <p>Arduino, Blynk IoT</p>
+        <p>Arduino Mega and ESP32 IoT system including plant irrigation, heating, ventilation, mood light and alarm
+          system.</p>
+        <a href=""><img src="images/githubblack.png" class="icon"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>ZEcology</h3>
+        <h5>Software Analysis and Design</h5>
+        <p>Visual Paradigm</p>
+        <p>Conceptual project for the automation of solving problems with improper garbage disposal</p>
+        <a href="https://github.com/ajla-brdarevic/ZEcology"><img src="images/githubblack.png" class="icon"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>Yummy</h3>
+        <h5>Mobile Application Development</h5>
+        <p>.NET MAUI, MySql</p>
+        <p>A mobile application for recipes with monitoring of the nutritional value of dishes</p>
+        <a href="https://github.com/ajla-brdarevic/Automatizacija-testnih-slucajeva---KKS"><img src="images/githubblack.png" class="icon"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>Time for a Challenge</h3>
+        <h5>Reconnect Hackathon</h5>
+        <p>Visual paradigm, Swift, HTML, CSS</p>
+        <p>An idea project to help with socialization after the COVID pandemic, where users are given challenges to do with their friends.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>Manual and Selenium Automation Testing</h3>
+        <h5>Software Quality Control</h5>
+        <p>SEO Testing, Manual testing, Bug report, Black Box, Selenium in C#</p>
+        <p>Manual and automated testing of the OreaBazaar web application.</p>
+        <a href="https://github.com/ajla-brdarevic/Automatizacija-testnih-slucajeva---KKS"><img src="images/githubblack.png" class="icon"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/eyp.jpg" class="image">
+        <h3>Inventory management system</h3>
+        <h5>Web Programming</h5>
+        <p>Node.js, React, MySql</p>
+        <p>A web application that has the task of speeding up the organization's operations.</p>
+        <a href="https://github.com/ajla-brdarevic/webzalihe_219/tree/master"><img src="images/githubblack.png" class="icon"></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
