@@ -1,4 +1,3 @@
-/* Resetovanje podrazumevanih stilova */
 body,
 h1,
 h2,
@@ -9,10 +8,9 @@ li {
   padding: 0;
 }
 
-/* Stilizacija glavnog sadržaja */
 body {
-    font-family: 'Karla', sans-serif;    
-    background-color: #FDF7FF;
+  font-family: 'Karla', sans-serif;
+  background-color: #FDF7FF;
 }
 
 section {
@@ -110,7 +108,10 @@ nav img {
   background-color: var(--btnBg);
   align-items: center;
 }
-.btn:focus { outline-style: none; }
+
+.btn:focus {
+  outline-style: none;
+}
 
 .light-theme {
   background-color: #FEFEDF;
@@ -125,53 +126,52 @@ nav img {
   --btnFontColor: #4A4E69;
 }
 
-/* Dodajte ova pravila za promjenu boje navbara u Dark Mode-u */
 .dark-theme nav {
-  background-color: #4A4E69; /* Promijenite ovu boju prema vašim željama */
+  background-color: #4A4E69;
 }
 
 .dark-theme .navbar a {
-  color: #C1A5A9; /* Promijenite ovu boju prema vašim željama */
+  color: #C1A5A9;
 }
 
 .dark-theme .navbar a:hover {
-  color: #eee; /* Promijenite ovu boju prema vašim željama */
+  color: #eee;
 }
 
 
 
 /*----------- ABOUT ME-----------*/
-h4{
+h4 {
   margin: 6px;
   font-family: 'Caveat', cursive;
 
 }
 
-p{
+p {
   text-align: justify;
-    margin: 0;
-    font-size: 14px;
+  margin: 0;
+  font-size: 14px;
 }
 
-a{
+a {
   color: #00C9A7;
 }
 
-i{
+i {
   color: #00C9A7;
   font-weight: bold;
 }
 
-.dark-theme i{
+.dark-theme i {
   color: #FEFEDF;
   font-weight: normal;
 }
 
-a:hover{
+a:hover {
   color: #845EC2;
 }
 
-img{
+img {
   width: 100%;
   align-items: center;
 }
@@ -181,7 +181,7 @@ img{
   background: #FEFEDF;
 }
 
-.dark-theme .page{
+.dark-theme .page {
   background-color: #4A4E69;
 }
 
@@ -198,9 +198,9 @@ img{
   box-shadow:
     0 5px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.05);
-    display: flex; /* Postavite element na fleksibilni kontejner */
-    flex-direction: column; /* Postavite orijentaciju na vertikalnu kolonu */
-    justify-content: center; /* Centrirajte sadržaj vertikalno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dark-theme .article {
@@ -209,9 +209,9 @@ img{
   box-shadow:
     0 5px 10px rgba(0, 0, 0, 0.2),
     0 20px 20px rgba(0, 0, 0, 0.05);
-    display: flex; /* Postavite element na fleksibilni kontejner */
-    flex-direction: column; /* Postavite orijentaciju na vertikalnu kolonu */
-    justify-content: center; /* Centrirajte sadržaj vertikalno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .article::after {
@@ -291,24 +291,23 @@ img{
   }
 
   .navbar li {
-    display: flex; /* Koristimo flex da bismo centrirali elemente */
-    align-items: center; /* Centriramo elemente vertikalno */
-    justify-content: center; /* Centriramo elemente horizontalno */
-    height: 15%; /* Podesite visinu elemenata prema potrebama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
   }
 
   .archive {
-    grid-auto-flow: row; /* Svi elementi će biti postavljeni u nove redove */
+    grid-auto-flow: row;
   }
-  
-  /* Ako želite promeniti izgled za pojedine elemente, koristite odgovarajuće selektore */
+
   .article:nth-child(2),
   .article:nth-child(8),
   .article:nth-child(17),
   .article:nth-child(24),
   .article:nth-child(29) {
-    grid-column: auto; /* Poništite promene za ove elemente */
-    background: gray; /* Vratite pozadinsku boju na belu */
+    grid-column: auto;
+    background: gray;
   }
 
 }
@@ -336,55 +335,51 @@ img{
   }
 
   .navbar li {
-    display: flex; /* Koristimo flex da bismo centrirali elemente */
-    align-items: center; /* Centriramo elemente vertikalno */
-    justify-content: center; /* Centriramo elemente horizontalno */
-    height: 15%; /* Podesite visinu elemenata prema potrebama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
   }
 
   .details p {
     position: static;
-    /* Poništavamo 'position: absolute' za manje uređaje */
     align-items: center;
     height: 80%;
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
     transform: none;
-    /* Poništavamo 'transform' za centriranje */
   }
 
   .archive {
-    grid-template-columns: repeat(2, 1fr); /* Postavite da bude 2 elementa u redu */
-    grid-auto-flow: row; /* Svi elementi će biti postavljeni u nove redove */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
   }
-  
-  /* Ako želite promeniti izgled za pojedine elemente, koristite odgovarajuće selektore */
+
   .article:nth-child(2),
   .article:nth-child(8),
   .article:nth-child(17),
   .article:nth-child(24),
   .article:nth-child(29) {
-    grid-column: auto; /* Poništite promene za ove elemente */
-    background: gray; /* Vratite pozadinsku boju na belu */
+    grid-column: auto;
+    background: gray;
   }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .archive {
-        grid-template-columns: repeat(2, 1fr); /* Postavite da bude 2 elementa u redu */
-        grid-auto-flow: row; /* Svi elementi će biti postavljeni u nove redove */
-      }
-      
-      /* Ako želite promeniti izgled za pojedine elemente, koristite odgovarajuće selektore */
-      .article:nth-child(2),
-      .article:nth-child(8),
-      .article:nth-child(17),
-      .article:nth-child(24),
-      .article:nth-child(29) {
-        grid-column: auto; /* Poništite promene za ove elemente */
-        background: gray; /* Vratite pozadinsku boju na belu */
-      }
+  .archive {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+  }
+
+  .article:nth-child(2),
+  .article:nth-child(8),
+  .article:nth-child(17),
+  .article:nth-child(24),
+  .article:nth-child(29) {
+    grid-column: auto;
+    background: gray;
+  }
 }
 
 @media (min-width: 993px) {}
