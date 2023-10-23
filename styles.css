@@ -11,7 +11,7 @@ li {
 
 /* Stilizacija glavnog sadržaja */
 body {
-  font-family: 'Karla', sans-serif;    
+  font-family: 'Karla', sans-serif;
 }
 
 .hero {
@@ -104,7 +104,10 @@ nav img {
   background-color: var(--btnBg);
   align-items: center;
 }
-.btn:focus { outline-style: none; }
+
+.btn:focus {
+  outline-style: none;
+}
 
 .light-theme {
   background-color: #FEFEDF;
@@ -121,19 +124,23 @@ nav img {
 
 /* Dodajte ova pravila za promjenu boje navbara u Dark Mode-u */
 .dark-theme nav {
-  background-color: #4A4E69; /* Promijenite ovu boju prema vašim željama */
+  background-color: #4A4E69;
+  /* Promijenite ovu boju prema vašim željama */
 }
 
 .dark-theme .navbar a {
-  color: #C1A5A9; /* Promijenite ovu boju prema vašim željama */
+  color: #C1A5A9;
+  /* Promijenite ovu boju prema vašim željama */
 }
 
 .dark-theme .navbar a:hover {
-  color: #eee; /* Promijenite ovu boju prema vašim željama */
+  color: #eee;
+  /* Promijenite ovu boju prema vašim željama */
 }
 
 .dark-theme .ajla {
-  color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za Dark Mode */
+  color: #C1A5A9;
+  /* Promijenite ovu boju prema vašim željama za Dark Mode */
   animation: type-dark 2s steps(14) 1s forwards, blink-dark 1s linear 1s infinite;
 }
 
@@ -164,7 +171,8 @@ nav img {
 @keyframes type-dark {
   to {
     width: 15ch;
-    color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za tekst u "Dark Mode-u" */
+    color: #C1A5A9;
+    /* Promijenite ovu boju prema vašim željama za tekst u "Dark Mode-u" */
   }
 }
 
@@ -188,7 +196,8 @@ nav img {
   }
 
   50% {
-    border-color: #C1A5A9; /* Promijenite ovu boju prema vašim željama za "Dark Mode" */
+    border-color: #C1A5A9;
+    /* Promijenite ovu boju prema vašim željama za "Dark Mode" */
   }
 
   to {
@@ -322,10 +331,14 @@ nav img {
   }
 
   .navbar li {
-    display: flex; /* Koristimo flex da bismo centrirali elemente */
-    align-items: center; /* Centriramo elemente vertikalno */
-    justify-content: center; /* Centriramo elemente horizontalno */
-    height: 15%; /* Podesite visinu elemenata prema potrebama */
+    display: flex;
+    /* Koristimo flex da bismo centrirali elemente */
+    align-items: center;
+    /* Centriramo elemente vertikalno */
+    justify-content: center;
+    /* Centriramo elemente horizontalno */
+    height: 15%;
+    /* Podesite visinu elemenata prema potrebama */
   }
 
   .ajla {
@@ -352,14 +365,11 @@ nav img {
 
   #cards {
     justify-content: space-between;
-    /* Rasporedi kartice ravnomjerno s istim razmakom */
   }
 
   .card {
     flex-basis: calc(100% - 1rem);
-    /* Ograničite širinu kartica na 100% sa margina */
     margin: 30%;
-    /* Dodajte margine između kartica */
   }
 
   .contact-container {
@@ -395,22 +405,20 @@ nav img {
   }
 
   .navbar li {
-    display: flex; /* Koristimo flex da bismo centrirali elemente */
-    align-items: center; /* Centriramo elemente vertikalno */
-    justify-content: center; /* Centriramo elemente horizontalno */
-    height: 15%; /* Podesite visinu elemenata prema potrebama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
   }
 
   .details p {
     position: static;
-    /* Poništavamo 'position: absolute' za manje uređaje */
     align-items: center;
     height: 80%;
     width: 80%;
     margin-top: 10%;
     margin-left: 10%;
     transform: none;
-    /* Poništavamo 'transform' za centriranje */
   }
 
   .images {
@@ -423,14 +431,11 @@ nav img {
 
   #cards {
     justify-content: space-between;
-    /* Rasporedi kartice ravnomjerno s istim razmakom */
   }
 
   .card {
     flex-basis: calc(100% - 1rem);
-    /* Ograničite širinu kartica na 100% sa margina */
     margin: 30%;
-    /* Dodajte margine između kartica */
   }
 
   .contact-container {
@@ -458,31 +463,22 @@ nav img {
 
   #cards {
     display: grid;
-    /* Koristimo grid za dvokolonički raspored */
     grid-template-columns: repeat(2, 1fr);
-    /* Dve kolone sa jednakom širinom */
     justify-content: center;
-    /* Horizontalno centriranje sadržaja */
     align-items: center;
-    /* Vertikalno centriranje sadržaja */
     min-height: calc(100vh - 10vh);
-    /* Postavljanje minimalne visine kako biste centrirali vertikalno */
     gap: 2rem;
-    /* Dodajte razmak između redova i kolona */
   }
 
   .card {
     width: 100%;
-    /* Širina kartica na 100% u okviru kolone */
     margin: 0;
-    /* Uklonite marginu između kartica */
     margin-bottom: 40%;
-    /* Dodajte više prostora između redova */
   }
 
-  .contact-item{
+  .contact-item {
     width: 200px;
-}
+  }
 }
 
 @media (min-width: 993px) {}
