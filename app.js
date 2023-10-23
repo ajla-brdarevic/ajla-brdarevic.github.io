@@ -5,7 +5,6 @@ menuToggle.addEventListener('click', () => {
   navbar.classList.toggle('active');
 });
 
-// Funkcija za postavljanje teme na temelju postavki uređaja
 function setThemeBasedOnDevicePreference() {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add('dark-theme');
@@ -37,15 +36,14 @@ function changeNavbarColor(theme) {
   const nav = document.querySelector('nav');
 
   if (theme === 'dark-theme') {
-    nav.classList.remove('light-theme'); // Uklonite light-theme klasu
-    nav.classList.add('dark-theme'); // Dodajte dark-theme klasu
+    nav.classList.remove('light-theme'); 
+    nav.classList.add('dark-theme'); 
   } else {
-    nav.classList.remove('dark-theme'); // Uklonite dark-theme klasu
-    nav.classList.add('light-theme'); // Dodajte light-theme klasu
+    nav.classList.remove('dark-theme'); 
+    nav.classList.add('light-theme'); 
   }
 }
 
-// Funkcija za prebacivanje vidljivosti slika na temelju teme
 function toggleImagesVisibility(theme) {
   const lightImages = document.querySelectorAll('.light-image');
   const darkImages = document.querySelectorAll('.dark-image');
@@ -60,14 +58,12 @@ function toggleImagesVisibility(theme) {
 }
 
 
-// Postavljanje teme na temelju postavki uređaja kada se stranica učita
 window.addEventListener('load', () => {
   setThemeBasedOnDevicePreference();
   switchTheme();
-  window.addEventListener('scroll', myFunction); // Dodajte ovu liniju ako želite zadržati ovu funkcionalnost
+  window.addEventListener('scroll', myFunction); 
 });
 
-// Dodajte ovaj dio koda za dodavanje "click" eventa za dinamički generirane elemente
 document.addEventListener("click", function (event) {
   if (event.target && event.target.className == "btn") {
     switchTheme();
