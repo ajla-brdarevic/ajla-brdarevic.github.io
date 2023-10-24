@@ -299,6 +299,7 @@ img {
 
   .archive {
     grid-auto-flow: row;
+    grid-template-columns: 1fr;
   }
 
   .article:nth-child(2),
