@@ -410,6 +410,10 @@ nav img {
     height: 15%;
   }
 
+  .content {
+    padding-top: 30%;
+  }
+
   .ajla {
     font-size: 1.5em;
     margin-top: 10px;
@@ -475,6 +479,10 @@ nav img {
     height: 15%;
   }
 
+  .content {
+    padding-top: 10%;
+  }
+
   .details p {
     position: static;
     align-items: center;
@@ -511,6 +519,10 @@ nav img {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .content {
+    padding-top: 10%;
+  }
+
   .details p {
     left: 5%;
   }
@@ -531,3 +543,8 @@ nav img {
   }
 }
 
+@media (min-width: 993px) {
+  .content {
+    padding-top: 5%;
+  }
+}

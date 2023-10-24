@@ -224,6 +224,10 @@ a {
         height: 15%;
     }
 
+    .projects-container {
+        padding-top: 30%;
+    }
+
     .projects-row {
         margin-top: 5%;
         display: grid;
@@ -262,6 +266,10 @@ a {
         height: 15%;
     }
 
+    .projects-container {
+        padding-top: 10%;
+    }
+
     .projects-row {
         margin-top: 5%;
         display: grid;
@@ -271,6 +279,11 @@ a {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+
+    .projects-container {
+        padding-top: 10%;
+    }
+
     .projects-row {
         margin-top: 5%;
         display: grid;
@@ -279,4 +292,8 @@ a {
     }
 }
 
-@media (min-width: 993px) {}
+@media (min-width: 993px) {
+    .projects-container {
+        padding-top: 10%;
+    }
+}
