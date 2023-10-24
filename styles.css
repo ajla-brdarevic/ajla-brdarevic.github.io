@@ -215,8 +215,8 @@ nav img {
 }
 
 .images {
-  width: 35%;
-  height: 40%;
+  width: 45%;
+  height: 50%;
   position: absolute;
   bottom: 30%;
   right: 5%;
@@ -507,7 +507,7 @@ nav img {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .details p{
+  .details p {
     position: static;
     align-items: center;
     height: 80%;
@@ -530,9 +530,10 @@ nav img {
 }
 
 
-@media (min-width: 993px) and (max-width: 1204px){
+@media (min-width: 993px) and (max-width: 1204px) {
   .images {
     bottom: 35%;
+    width: 35%;
+    height: 40%;
   }
 }
-
