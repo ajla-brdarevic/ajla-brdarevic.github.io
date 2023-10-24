@@ -215,10 +215,10 @@ nav img {
 }
 
 .images {
-  width: 45%;
-  height: 50%;
+  width: 35%;
+  height: 40%;
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
   right: 5%;
 }
 
@@ -410,10 +410,6 @@ nav img {
     height: 15%;
   }
 
-  .content {
-    padding-top: 30%;
-  }
-
   .ajla {
     font-size: 1.5em;
     margin-top: 10px;
@@ -479,10 +475,6 @@ nav img {
     height: 15%;
   }
 
-  .content {
-    padding-top: 10%;
-  }
-
   .details p {
     position: static;
     align-items: center;
@@ -494,11 +486,7 @@ nav img {
   }
 
   .images {
-    width: 25%;
-    height: 30%;
-    position: absolute;
-    bottom: 0%;
-    top: 60%;
+    display: none;
   }
 
 
@@ -519,20 +507,18 @@ nav img {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .content {
-    padding-top: 10%;
-  }
-
-  .details p {
-    left: 5%;
+  .details p{
+    position: static;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    transform: none;
   }
 
   .images {
-    width: 35%;
-    height: 40%;
-    position: absolute;
-    bottom: 40%;
-    right: 0%;
+    display: none;
   }
 
   .social {
@@ -543,8 +529,10 @@ nav img {
   }
 }
 
-@media (min-width: 993px) {
-  .content {
-    padding-top: 5%;
+
+@media (min-width: 993px) and (max-width: 1204px){
+  .images {
+    bottom: 35%;
   }
 }
+
