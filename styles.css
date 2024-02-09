@@ -386,7 +386,6 @@ nav img {
   background: #e46880;
 }
 
-
 @media (max-width: 480px) {
   .navbar {
     display: none;
@@ -435,7 +434,7 @@ nav img {
   }
 
   /*-----CONTACT-----*/
-  
+
   .header {
     padding-top: 30%;
     align-items: center;
@@ -445,17 +444,26 @@ nav img {
   .social {
     flex-direction: column;
     align-items: center;
+    padding-top: 50%;
   }
 
   .social li {
-    margin: 20px 0;
+    margin: 10%;
   }
 
   .social li a {
-    width: auto;
-    text-align: center;
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
   }
-
 }
 
 
@@ -512,15 +520,25 @@ nav img {
   .social {
     flex-direction: column;
     align-items: center;
+    padding-top: 50%;
   }
 
   .social li {
-    margin: 20px 0;
+    margin: 10%;
   }
 
   .social li a {
-    width: auto;
-    text-align: center;
+    text-decoration: none;
+    display: absolute;
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
   }
 }
 
@@ -550,6 +568,7 @@ nav img {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
     grid-gap: 4rem;
+    margin-top: 8%;
   }
 }
 
