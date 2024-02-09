@@ -84,3 +84,11 @@ window.onclick = function(event) {
     event.target.style.display = "none";
   }
 }
+
+function showInnerPopup(popupId) {
+  var popup = document.getElementById(popupId);
+  if (popup) {
+      popup.style.display = "block";
+  }
+}
+

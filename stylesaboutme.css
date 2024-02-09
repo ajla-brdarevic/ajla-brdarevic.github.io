@@ -147,12 +147,27 @@ nav img {
 h3 {
   margin: 6px;
   text-align: center;
+  color:#22092C;
+}
+
+.dark-theme h3 {
+  margin: 6px;
+  text-align: center;
+  color:#22092C;
 }
 
 p {
   text-align: justify;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
+  color: #22092C;
+}
+
+.dark-theme p {
+  text-align: justify;
+  margin: 0;
+  font-size: 16px;
+  color: #22092C;
 }
 
 a {
@@ -195,7 +210,7 @@ img {
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 1200px;
+  max-width: 50%;
 }
 
 .dark-theme .archive {
@@ -204,7 +219,7 @@ img {
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 1200px;
+  max-width: 50%;
 }
 
 .card {
@@ -242,8 +257,11 @@ img {
   padding: 20px;
   border-radius: 5px;
   width: 70%;
-  max-width: 500px;
+  max-width: 650px;
+  color: #22092C;
 }
+
+
 
 
 @media (max-width: 540px) {
@@ -360,11 +378,16 @@ img {
 
 @media (min-width: 769px) and (max-width: 992px) {
   .archive {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Prikazuje po tri u redu */
-    justify-content: space-between; /* Raspored kartica */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     max-width: 90%;
+  }
+
+  .archive .card {
+    width: calc(50% - 20px);
+    margin: 10px;
   }
 
   .dark-theme .archive {
