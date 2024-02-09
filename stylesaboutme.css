@@ -297,12 +297,12 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .archive .card {
     width: calc(50% - 20px);
-    margin: 10px;
+    width: 80%;
   }
 
   .header {
