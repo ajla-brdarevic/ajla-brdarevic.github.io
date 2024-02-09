@@ -70,3 +70,17 @@ document.addEventListener("click", function (event) {
   }
 });
 
+
+
+
+
+function showPopup(popupId) {
+  var popup = document.getElementById(popupId);
+  popup.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target.classList.contains('popup')) {
+    event.target.style.display = "none";
+  }
+}

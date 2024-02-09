@@ -40,78 +40,126 @@
             <h1>About Me</h1>
         </div>
         <div class="archive">
-            <article class="article">
-                <p>This portfolio is a glimpse into my world—professionally and personally. It showcases my skills and
-                    experiences. While this site offers a sneak peek, there's more to explore. Looking forward to
-                    sharing stories, experiences, and insights in our chats and interviews. Let's keep some surprises in
-                    store!</p>
-            </article>
-            <article class="article">
-                <h4>Career Aspirations</h4>
-                <p>Currently, I am open to exploring a wide range of career opportunities within the field of software
-                    engineering. I embrace the idea of versatility and am not hesitant to venture into any career path
-                    that aligns with my passion and expertise. I firmly believe that every opportunity, regardless of
-                    its specific focus, has the potential to be a stepping stone in my journey. My plan for the future
-                    is to pursue a master's degree in software engineering, allowing me to complete the bigger picture.
-                    Along the way, I aim to gain valuable work experience to further develop my technical skills, and
-                    to explore different facets of the industry to find the path I'd like to commit to in the long run.
-                    While my studies have exposed me to a broad spectrum of topics, a few areas have particularly piqued
-                    my interest: Embedded systems and the Internet of Things (IoT) and I've delved into diverse back-end
-                    development techniques for various types of applications. While I'm increasingly drawn to AI, I
-                    acknowledge that I may not yet possess the depth of knowledge and experience required to prioritize
-                    it as my sole focus.
-                </p>
-            </article>
-            <article class="article">
-                <h4>Hard Skills</h4>
-                <p><b>Web Development</b><br />- Frontend: HTML, CSS, Tailwind CSS, JavaScript, React<br /> - Backend:
-                    Node.js, MySql, Mongo DB<br /></br>
-                    <b>Mobile App Development</b></br>- .NET MAUI, C#</br></br>
-                    <b>Programming Languages</b></br>- C++, C, C#, Python, JavaScript, Java
-                </p>
-            </article>
-            <article class="article">
-                <p>
-                    <b>Database: </b></br>- MySql</br></br>
-                    <b>Testing: </b></br>- Manual, Automation in Selenium C#</br></br>
-                    <b>Design: </b></br>- Figma</br></br>
-                    <b>Agile: </b></br>- SCRUM, Sprint Design</br></br>
-                    <b>Embedded Systems: </b></br>- Arduino, C</br>
-                </p>
-            </article>
-            <article class="article">
-                <h4>Soft Skills</h4>
-                <p><b>Analytical and Critical Thinking</b><br>
-                    - Proficient in dissecting complex problems, analyzing data, and deriving strategic insights to
-                    drive informed decision-making <br><br>
-                    <b>Active Learning Strategies</b><br>
-                    - Adept at adopting and implementing diverse learning approaches, ensuring continuous skill
-                    enhancement and staying abreast of industry trends.
-                </p>
-            </article>
-            <article class="article">
-                <p>
-                    <b>Creativity, Originality, Ideation, Innovation, and Initiative</b><br>
-                    - Demonstrates a flair for creative thinking, generating original ideas, and taking innovative
-                    initiatives to bring fresh perspectivesto projects.<br><br>
-                    <b>Adaptability and Flexibility</b><br>
-                    - Thrives in dynamic environments, showcasing the ability to adapt
-                    swiftly to change, and maintaining flexibility to excel in diverse professional scenarios.
-                </p>
-            </article>
-            <article class="article">
-                <h4>Academics</h4>
-                <p>
-                    Completing my academic journey at the <a
-                        href="https://ptf.unze.ba/studijski-programi-si/">Polytechnic Faculty</a>, I immersed myself in
-                    a dynamic learning environment. The collaborative nature of group projects enhanced my ability to
-                    work
-                    effectively in teams. Grateful for the solid foundation and practical knowledge gained, the faculty
-                    has played a pivotal role in shaping my academic and professional growth.
-                </p>
-            </article>
-            <article class="article">
-                <p>Drawing from my experiences in various organizations, I continue to invest my free time in
+            <div class="card" onclick="showPopup('popup1')">
+                <h3>Technical Skills</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup2')">
+                <h3>Soft Skills</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup3')">
+                <h3>Academics</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup4')">
+                <h3>Working Experience</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup5')">
+                <h3>Extracurricular</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup6')">
+                <h3>Awards</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup7')">
+                <h3>Organizations</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup8')">
+                <h3>Hobbies</h3>
+            </div>
+            <div class="card" onclick="showPopup('popup9')">
+                <h3>Career Aspirations</h3>
+            </div>
+
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <p><b>Web Development</b><br />- Frontend: HTML, CSS, Tailwind CSS, JavaScript, React<br /> -
+                        Backend:
+                        Node.js, MySql, Mongo DB<br /></br>
+                        <b>Mobile App Development</b></br>- .NET MAUI, C#</br></br>
+                        <b>Programming Languages</b></br>- C++, C, C#, Python, JavaScript, Java
+                        <b>Database: </b></br>- MySql</br></br>
+                        <b>Testing: </b></br>- Manual, Automation in Selenium C#</br></br>
+                        <b>Design: </b></br>- Figma</br></br>
+                        <b>Agile: </b></br>- SCRUM, Sprint Design</br></br>
+                        <b>Embedded Systems: </b></br>- Arduino, C</br>
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <p><b>Analytical and Critical Thinking</b><br>
+                        - Proficient in dissecting complex problems, analyzing data, and deriving strategic insights to
+                        drive informed decision-making <br><br>
+                        <b>Active Learning Strategies</b><br>
+                        - Adept at adopting and implementing diverse learning approaches, ensuring continuous skill
+                        enhancement and staying abreast of industry trends.<br><br>
+                        <b>Creativity, Originality, Ideation, Innovation, and Initiative</b><br>
+                        - Demonstrates a flair for creative thinking, generating original ideas, and taking innovative
+                        initiatives to bring fresh perspectivesto projects.<br><br>
+                        <b>Adaptability and Flexibility</b><br>
+                        - Thrives in dynamic environments, showcasing the ability to adapt
+                        swiftly to change, and maintaining flexibility to excel in diverse professional scenarios.
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                    <p>
+                        Completing my academic journey at the <a
+                            href="https://ptf.unze.ba/studijski-programi-si/">Polytechnic
+                            Faculty</a>, I immersed myself in
+                        a dynamic learning environment. The collaborative nature of group projects enhanced my ability
+                        to
+                        work
+                        effectively in teams. Grateful for the solid foundation and practical knowledge gained, the
+                        faculty
+                        has played a pivotal role in shaping my academic and professional growth.
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup4" class="popup">
+                <div class="popup-content">
+                    <img src="images/telecom.png">
+                    <p>I had the opportunity to undertake internship for one month at BH Telecom in directorate Zenica,
+                        working in the <i>Department for Technical Support</i>. During this internship, I worked in the
+                        team of
+                        <i>Office for Access
+                            Networks and Terminal Equipment</i> and <i>Communications Solutions and
+                            Preparation Office, participating in optical cable testing, and even engaging in
+                            fieldwork</i>.
+                        <br>Besides
+                        gaining various technical skills, this experience provided insights into how a <i>large
+                            corporation
+                            operates</i>.
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup5" class="popup">
+                <div class="popup-content">
+
+                </div>
+            </div>
+
+            <div id="popup6" class="popup">
+                <div class="popup-content">
+                    <img src="images/reconnect.JPG">
+                    <p>One of the standout experiences I must highlight is the <a
+                            href="https://ptf.unze.ba/svecano-urucene-nagrade-pobjednicima-takmicenja-reconnect-hackathon/">Reconnect
+                            Hackathon</a>, held in October 2022. It
+                        was an unforgettable event where my team, "Code of Duty," clinched <i>the second place</i>.</p>
+
+                    <p>We leveraged our academic knowledge in <i>software analysis and design</i> while venturing into
+                        uncharted territories. The Reconnect Hackathon pushed us to explore new technologies, like
+                        <i>Swift</i>, for the first time.
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup7" class="popup">
+                <div class="popup-content">
+                    Drawing from my experiences in various organizations, I continue to invest my free time in
                     opportunities that help me grow both personally and professionally. I'm dedicated to building my
                     soft skills and technical expertise, bridging the gap between classroom knowledge and real-world
                     experiences. It's not just about expanding my own knowledge; I'm also passionate about connecting
@@ -120,91 +168,69 @@
                     journey of shared experiences and common interests. Together, we're not just dreaming but turning
                     our visions into reality. One of them is <a href="https://www.facebook.com/itgirlsbih/">IT Girls
                         Bosnia and Herzegovina</a>.
-                </p>
-            </article>
-            <article class="article">
-                <h4>Hackaton</h4>
-                <img src="images/reconnect.JPG">
-                <p>One of the standout experiences I must highlight is the <a
-                        href="https://ptf.unze.ba/svecano-urucene-nagrade-pobjednicima-takmicenja-reconnect-hackathon/">Reconnect
-                        Hackathon</a>, held in October 2022. It
-                    was an unforgettable event where my team, "Code of Duty," clinched <i>the second place</i>.</p>
-            </article>
-            <article class="article">
-                <p>We leveraged our academic knowledge in <i>software analysis and design</i> while venturing into
-                    uncharted territories. The Reconnect Hackathon pushed us to explore new technologies, like
-                    <i>Swift</i>, for the first time.
-                </p>
-            </article>
-            <article class="article">
-                <h4>IT Girls</h4>
-                <img src="images/itgirls.png">
-            </article>
-            <article class="article">
-                <p> I've had the pleasure of taking part in several events organized by amazing women in Bosnia and
-                    Herzegovina. These experiences have been a fantastic learning journey, where I acquired various
-                    skills and honed my technical knowledge.</p>
-            </article>
-            <article class="article">
-                <h4>Organizations</h4>
-                <p>Among the numerous organizations, one captured my attention the most. <br>To which I dedicated
-                    the most time, and which undoubtedly taught me the most about soft skills, is the <a
-                        href="https://eyp.org">European Youth
-                        Parliament</a>.</p>
-            </article>
-            <article class="article">
-                <img src="images/eyp.jpg">
+                    </p>
+                    <img src="images/eyp.jpg">
+                    <p>Among the numerous organizations, one captured my attention the most. <br>To which I dedicated
+                        the most time, and which undoubtedly taught me the most about soft skills, is the <a
+                            href="https://eyp.org">European Youth
+                            Parliament</a>.</p>
 
-            </article>
-            <article class="article">
-                <h4>Work experience</h4>
-                <img src="images/telecom.png">
-                <p>I had the opportunity to undertake internship for one month at BH Telecom in directorate Zenica,
-                    working in the <i>Department for Technical Support</i>.
-                </p>
-            </article>
-            <article class="article">
-                <p>During this internship, I worked in the team of <i>Office for Access
-                        Networks and Terminal Equipment</i> and <i>Communications Solutions and
-                        Preparation Office, participating in optical cable testing, and even engaging in fieldwork</i>.
-                    <br>Besides
-                    gaining various technical skills, this experience provided insights into how a <i>large corporation
-                        operates</i>.
-                </p>
-            </article>
-            <article class="article">
-                <p>Thank you for exploring my web portfolio! It has been a journey of growth and learning, and I'm
-                    excited about the opportunities ahead. As I continue to evolve personally and professionally, this
-                    platform will serve as a dynamic reflection of my skills, experiences, and creative endeavors. Stay
-                    tuned for more updates, projects, and insights on this ever-evolving digital space. Your support
-                    means the world to me, and I look forward to connecting with you on this ongoing adventure!</p>
-            </article>
-            <article class="article">
-                <h4>My hobbies</h4>
-                <p>As a programming 'polyglot,' I've expanded my language talents beyond code to human languages.
-                    Learning new languages has become a quirky hobby, enhancing my Netflix experience and adding a touch
-                    of wanderlust. Recently, I've taken up sewing, merging creativity with environmental consciousness
-                    in sustainable fashion. </p>
-            </article>
-            <article class="article">
-                <p>My diverse interests include crossword puzzles, quizzes, a passion for
-                    Formula 1, and a dedication to films, series, books, and music. </br>Besides technology, another
-                    constant
-                    in my life has been art. I attended both a music school and
-                    ballet classes. I play the <i>violin</i>, <i>piano</i>, and <i>guitar</i>, and I used to dance
-                    <i>ballet</i>.
-                </p>
-            </article>
-            <article class="article">
-                <img src="images/ballet.jpg">
-                <p><i>Moscow International Festival of Slavic Music</i>. It's a moment I hold dear and always
-                    cherish, because I was awarded a special prize.</p>
-            </article>
+                            
+                    <p> I've had the pleasure of taking part in several events organized by amazing women in Bosnia and
+                        Herzegovina. These experiences have been a fantastic learning journey, where I acquired various
+                        skills and honed my technical knowledge.</p>
+                </div>
+            </div>
 
+            <div id="popup8" class="popup">
+                <div class="popup-content">
+                    <p>As a programming 'polyglot,' I've expanded my language talents beyond code to human languages.
+                        Learning new languages has become a quirky hobby, enhancing my Netflix experience and adding a
+                        touch
+                        of wanderlust. Recently, I've taken up sewing, merging creativity with environmental
+                        consciousness
+                        in sustainable fashion.
+                        My diverse interests include crossword puzzles, quizzes, a passion for
+                        Formula 1, and a dedication to films, series, books, and music. </br>Besides technology, another
+                        constant
+                        in my life has been art. I attended both a music school and
+                        ballet classes. I play the <i>violin</i>, <i>piano</i>, and <i>guitar</i>, and I used to dance
+                        <i>ballet</i>.
+                    </p>
+                    <img src="images/ballet.jpg">
+                    <p><i>Moscow International Festival of Slavic Music</i>. It's a moment I hold dear and always
+                        cherish, because I was awarded a special prize.</p>
+                </div>
+            </div>
 
-            </article>
+            <div id="popup9" class="popup">
+                <div class="popup-content">
+                    <p>Currently, I am open to exploring a wide range of career opportunities within the field of
+                        software engineering. I embrace the idea of versatility and am not hesitant to venture into any
+                        career
+                        path that aligns with my passion and expertise. I firmly believe that every opportunity,
+                        regardless
+                        of
+                        its specific focus, has the potential to be a stepping stone in my journey. My plan for the
+                        future
+                        is to pursue a master's degree in software engineering, allowing me to complete the bigger
+                        picture.
+                        Along the way, I aim to gain valuable work experience to further develop my technical skills,
+                        and
+                        to explore different facets of the industry to find the path I'd like to commit to in the long
+                        run.
+                        While my studies have exposed me to a broad spectrum of topics, a few areas have particularly
+                        piqued
+                        my interest: Embedded systems and the Internet of Things (IoT) and I've delved into diverse
+                        back-end
+                        development techniques for various types of applications. While I'm increasingly drawn to AI, I
+                        acknowledge that I may not yet possess the depth of knowledge and experience required to
+                        prioritize
+                        it as my sole focus.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 <script src="app.js"></script>
