@@ -424,19 +424,14 @@ nav img {
     position: static;
     align-items: center;
     height: 80%;
-    width: 95%;
+    width: 90%;
     margin-top: 10%;
-    margin-left: 2.5%;
+    margin-left: 5%;
     transform: none;
   }
 
   .images {
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
   }
 
   /*-----CONTACT-----*/
