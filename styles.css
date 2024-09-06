@@ -431,12 +431,7 @@ nav img {
   }
 
   .images {
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
   }
 
   /*-----CONTACT-----*/
