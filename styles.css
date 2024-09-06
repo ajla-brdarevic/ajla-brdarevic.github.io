@@ -471,7 +471,7 @@ nav img {
   }
 }
 
-@media (min-widt: 366px) and (max-width: 480px) {
+@media (min-width: 366px) and (max-width: 480px) {
   .navbar {
     display: none;
     position: fixed;
@@ -555,7 +555,6 @@ nav img {
     box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
   }
 }
-
 
 @media (min-width: 481px) and (max-width: 768px) {
   .navbar {
