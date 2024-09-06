@@ -386,7 +386,8 @@ nav img {
   background: #e46880;
 }
 
-@media (max-width: 365px) {
+
+@media (max-width: 480px) {
   .navbar {
     display: none;
     position: fixed;
@@ -424,7 +425,7 @@ nav img {
     align-items: center;
     height: 80%;
     width: 95%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 2.5%;
     transform: none;
   }
@@ -433,92 +434,7 @@ nav img {
     width: 10%;
     height: 15%;
     position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  /*-----CONTACT-----*/
-
-  .header {
-    padding-top: 30%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .social {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50%;
-  }
-
-  .social li {
-    margin: 10%;
-  }
-
-  .social li a {
-    text-decoration: none;
-    display: absolute;
-    display: block;
-    width: 210px;
-    height: 80px;
-    background: #fff;
-    text-align: left;
-    padding-left: 20px;
-    transform: rotate(-30deg) skew(25deg) translate(0, 0);
-    transition: .5s;
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
-  }
-}
-
-@media (min-width: 366px) and (max-width: 480px) {
-  .navbar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #FEFEDF;
-    z-index: 1000;
-    margin-top: 10vh;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .navbar li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15%;
-  }
-
-  .ajla {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
-
-  .details p {
-    position: static;
-    align-items: center;
-    height: 80%;
-    width: 90%;
-    margin-top: 10%;
-    margin-left: 5%;
-    transform: none;
-  }
-
-  .images {
-    width: 10%;
-    height: 15%;
-    position: absolute;
-    bottom: 8%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -670,7 +586,6 @@ nav img {
     margin-top: 8%;
   }
 }
-
 
 @media (min-width: 993px) and (max-width: 1204px) {
   .images {
