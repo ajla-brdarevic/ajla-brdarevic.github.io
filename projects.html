@@ -4,76 +4,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects Ajla Brdarević</title>
+  <title>Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Karla&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="projects.css">
   <link rel="icon" href="images/icon.png">
 </head>
 
-<body class="light-theme">
-  <div class="sticky">
-    <div class="hero">
-      <nav>
-        <div>
-          <a href="index.html"><img src="images/logo.png" class="light-image" alt="Logo"></a>
-          <a href="index.html"><img src="images/logo_dark.png" class="dark-image" alt="Logo"></a>
-        </div>
-        <div class="menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="navbar">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="aboutme.html">ABOUT ME</a></li>
-          <li><a href="projects.html">PROJECTS</a></li>
-          <li><a href="events.html">EVENTS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><button class="btn">theme</button></li>
-        </ul>
-      </nav>
-    </div>
+<body>
+  <div class="nav">
+    <nav>
+      <div class="icon">
+        <a href="home.html"><img src="images/icon.png" alt="Logo"></a>
+        <a href="home.html">ajla-brdarević</a>
+      </div>
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </li>
+      </ul>
+    </nav>
   </div>
 
-  <div class="header">
-    <h1>Projects</h1>
-</div>
-
   <div class="projects-container">
+    <h2>Web Development</h2>
     <div class="projects-row">
       <div class="project">
-        <img src="images/home.jpg" class="image">
+        <img src="images/projects/portfolio.jpg" class="image">
+        <h3>My Portfolio</h3>
+        <h5>Frontend</h5>
+        <p>HTML, CSS, JS, GitHub</p>
+        <p>Very visual 🧐</p>
+        <a href="https://github.com/ajla-brdarevic/ajla-brdarevic.github.io"><img src="images/githubblack.png"
+            class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/ferrari.jpg" class="image">
+        <h3>F1 info (maybe predictor)</h3>
+        <h5>Full Stack</h5>
+        <p>HTML, CSS, JS, Flask</p>
+        <p>The Formula 1 Predictor designed to provide insights for Formula 1 racing.</p>
+        <a href="https://github.com/ajla-brdarevic/f1"><img src="images/githubblack.png" class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/yoga.jpg" class="image">
+        <h3>Shanti Yoga Zenica</h3>
+        <h5>Frontend</h5>
+        <p>HTML, CSS, JS, GitHub</p>
+        <p>Web Page for local business <a href="https://shantiyogazenica.github.io/shantiyogazenica/"
+            target="_blank">https://shantiyogazenica.github.io</a></p>
+        <a href="https://github.com/shantiyogazenica/shantiyogazenica"><img src="images/githubblack.png"
+            class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/webshop.jpg" class="image">
+        <h3>IT Girls Web Shop</h3>
+        <h5>Frontend</h5>
+        <p>HTML, CSS, JS</p>
+        <p>IT Girls Webinar, Web Shop for my small business</p>
+        <a href="https://github.com/ajla-brdarevic/IT-Girls-web-page"><img src="images/githubblack.png"
+            class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/events.jpg" class="image">
+        <h3>Events</h3>
+        <h5>Backend</h5>
+        <p>Java</p>
+        <p>Univesity Project - A system for monitoring local events</p>
+        <a href="https://github.com/ajla-brdarevic/dogadjaji_219"><img src="images/githubblack.png"
+            class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/inventory.jpg" class="image">
+        <h3>Inventory management system</h3>
+        <h5>Full Stack</h5>
+        <p>Node.js, React, MySql</p>
+        <p>Univesity Project - A system for speeding up the organization's operations.</p>
+        <a href="https://github.com/ajla-brdarevic/webzalihe_219/tree/master"><img src="images/githubblack.png"
+            class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/weather.jpg" class="image">
+        <h3>weather-app</h3>
+        <h5>Frontend</h5>
+        <p>HTML, CSS, JS</p>
+        <p>Learning about frontend</p>
+        <a href="https://github.com/ajla-brdarevic/weather-app"><img src="images/githubblack.png" class="icon-git"></a>
+      </div>
+
+    </div>
+
+    <h2>Embedded Systems/Project management/QA</h2>
+    <div class="projects-row">
+      <div class="project">
+        <img src="images/projects/home.jpg" class="image">
         <h3>Smart Home</h3>
         <h5>Graduation thesis</h5>
         <p>Arduino, Blynk IoT</p>
         <p>Arduino Mega and ESP32 IoT system including plant irrigation, heating, ventilation, mood light and alarm
           system.</p>
-        <a href="https://github.com/ajla-brdarevic/Smart-Home/tree/main"><img src="images/githubblack.png" class="icon"></a>
+        <a href="https://github.com/ajla-brdarevic/Smart-Home/tree/main"><img src="images/githubblack.png"
+            class="icon-git"></a>
       </div>
 
       <div class="project">
-        <img src="images/zecology.jpg" class="image">
+        <img src="images/projects/automation.png" class="image">
+        <h3>Testing</h3>
+        <h5>University - Software Quality Control</h5>
+        <p>SEO Testing, Manual testing, Bug report, Black Box, Selenium in C#</p>
+        <p>Manual and automated testing of the OreaBazaar web application.</p>
+        <a href="https://github.com/ajla-brdarevic/Automatizacija-testnih-slucajeva---KKS"><img
+            src="images/githubblack.png" class="icon-git"></a>
+      </div>
+
+      <div class="project">
+        <img src="images/projects/zecology.jpg" class="image">
         <h3>ZEcology</h3>
         <h5>Software Analysis and Design</h5>
         <p>Visual Paradigm</p>
         <p>Conceptual project for the automation of solving problems with improper garbage disposal</p>
-        <a href="https://github.com/ajla-brdarevic/ZEcology"><img src="images/githubblack.png" class="icon"></a>
+        <a href="https://github.com/ajla-brdarevic/ZEcology"><img src="images/githubblack.png" class="icon-git"></a>
       </div>
 
+    </div>
+
+    <h2>Mobile App Development</h2>
+    <div class="projects-row">
       <div class="project">
-        <img src="images/yummy.png" class="image">
+        <img src="images/projects/yummy.png" class="image">
         <h3>Yummy</h3>
-        <h5>Mobile Application Development</h5>
+        <h5>Univesity - Mobile Application Development</h5>
         <p>.NET MAUI, MySql</p>
         <p>A mobile application for recipes with monitoring of the nutritional value of dishes</p>
         <a href="https://github.com/ajla-brdarevic/Automatizacija-testnih-slucajeva---KKS"><img
-            src="images/githubblack.png" class="icon"></a>
+            src="images/githubblack.png" class="icon-git"></a>
       </div>
 
       <div class="project">
-        <img src="images/recon.png" class="image">
+        <img src="images/projects/recon.png" class="image">
         <h3>Time for a Challenge</h3>
         <h5>Reconnect Hackathon</h5>
         <p>Visual paradigm, Swift, HTML, CSS</p>
@@ -82,28 +164,17 @@
       </div>
 
       <div class="project">
-        <img src="images/automation.png" class="image">
-        <h3>Manual and Selenium Automation Testing</h3>
-        <h5>Software Quality Control</h5>
-        <p>SEO Testing, Manual testing, Bug report, Black Box, Selenium in C#</p>
-        <p>Manual and automated testing of the OreaBazaar web application.</p>
-        <a href="https://github.com/ajla-brdarevic/Automatizacija-testnih-slucajeva---KKS"><img
-            src="images/githubblack.png" class="icon"></a>
+        <img src="images/projects/fastfood.jpg" class="image">
+        <h3>ReallyFastFoodApp</h3>
+        <h5>Univesity - Mobile Application Development</h5>
+        <p>.NET MAUI, MySql</p>
+        <p>A mobile application for food delivery.</p>
+        <a href="https://github.com/ajla-brdarevic/ReallyFastFoodApp"><img
+          src="images/githubblack.png" class="icon-git"></a>
       </div>
 
-      <div class="project">
-        <img src="images/inventory.jpg" class="image">
-        <h3>Inventory management system</h3>
-        <h5>Web Programming</h5>
-        <p>Node.js, React, MySql</p>
-        <p>A web application that has the task of speeding up the organization's operations.</p>
-        <a href="https://github.com/ajla-brdarevic/webzalihe_219/tree/master"><img src="images/githubblack.png"
-            class="icon"></a>
-      </div>
     </div>
   </div>
 </body>
-
-<script src="app.js"></script>
 
 </html>

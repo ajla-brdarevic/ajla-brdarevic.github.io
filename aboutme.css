@@ -1,0 +1,735 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #0d1117;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* Dodano za vertikalno poravnanje */
+    align-items: flex-start;
+    padding: 1rem 1rem 0 1rem;
+    background-color: #010409;
+    color: #fafafa;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    /* Prostor ispod ikone */
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    /* Razmak između slike i teksta */
+}
+
+.icon p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    /* Uklanja margine da bi se elemente poravnali */
+}
+
+.icon a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Vertikalni prikaz li elemenata */
+}
+
+.navbar li {
+    margin: 5px 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+}
+
+/* Stil za aktivni link */
+.navbar li a.active {
+    border-bottom: 2px solid #845ec2;
+    /* Dodaje liniju ispod aktivnog linka */
+    color: #845ec2;
+}
+
+/* Responsive Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fafafa;
+    margin: 4px 0;
+}
+
+/*about me stilovi*/
+.about {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.about a {
+    text-decoration: none;
+    color: #fff090;
+    font-size: 20px;
+}
+
+.about li {
+    color: #4FAF44;
+    padding: 4px;
+}
+
+.about .arrow i {
+    display: none;
+}
+
+.about .arrow {
+    position: relative;
+    display: block;
+    color: #845ec2;
+}
+
+.about .arrow:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about .arrow:hover i {
+    display: block;
+    position: absolute;
+    top: 0.50em;
+    left: -6em;
+}
+
+/* Pop-up styles */
+.popup {
+    display: none;
+    /* Hidden initially */
+    position: fixed;
+    top: 12%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    /* Above all other elements */
+}
+
+.popup-content {
+    position: relative;
+    margin: 5% auto;
+    /* Centering popup */
+    padding: 20px;
+    background-color: #0d1117;
+    border-radius: 10px;
+    color: #fafafa;
+    width: 90%;
+    max-height: 85%;
+    /* Ensure popup does not overflow screen */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    text-align: center;
+    animation: popupAnimation 0.3s ease-in-out;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: #fafafa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Animation for popup */
+@keyframes popupAnimation {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*TECHNICAL SKILLS*/
+.technical-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+
+.skill-category {
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #010409;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category b {
+    font-size: 1.2em;
+    color: #845ec2;
+    /* Plava boja za naglašavanje */
+}
+
+.skill-category ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.skill-category li {
+    margin-bottom: 0.5em;
+    color: #fafafa;
+}
+
+.skill-category a {
+    margin-bottom: 0.5em;
+    color: #845ec2;
+    text-decoration: underline;
+}
+
+/*SOFT SKILLS*/
+.soft-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Kolone koje se automatski prilagođavaju */
+    gap: 20px;
+    /* Razmak između elemenata */
+    padding: 20px;
+    color: #fafafa;
+    text-align: left;
+    /* Tekst levo poravnat */
+}
+
+.skill {
+    background-color: #010409;
+    /* Pozadina za svaki skill */
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.skill b {
+    display: block;
+    /* Čini <b> element blok elementom */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #845ec2;
+}
+
+.skill p {
+    margin: 0;
+    /* Uklanja zadnji razmak */
+    text-align: left;
+}
+
+/*ACADEMICS*/
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10px 0;
+    border-left: 2px solid #4FAF44;
+}
+
+.timeline-item:nth-child(even) {
+    border-left: 2px solid #845ec2;
+}
+
+.timeline-content {
+    padding: 10px 20px;
+    background: #010409;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    background-color: #845ec2;
+    border-radius: 50%;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #fafafa;
+}
+
+.timeline-content a {
+    margin-bottom: 0;
+    color: #845ec2;
+    text-decoration: none;
+}
+
+/*WORK EXPERIENCE*/
+.experience-timeline {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    position: relative;
+    border-left: 3px solid #4FAF44;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-item:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #845ec2;
+    border-radius: 50%;
+    border: 3px solid #845ec2;
+}
+
+.experience-date {
+    font-style: italic;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #845ec2;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: #4FAF44;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*EXTRACURRICULAR*/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 8%;
+    overflow-x: auto;
+    /* Enables horizontal scrolling */
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+    white-space: nowrap;
+}
+
+.card {
+    background: #010409;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-cover img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    flex: 1;
+    /* Allows content to grow and fill the available space */
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #fafafa;
+}
+
+.card-content p {
+    margin: 10px 0;
+    color: #fafafa;
+}
+
+.card-content a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+.hobbies {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.hobbies img {
+    width: 30%;
+}
+
+.aspirations {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/*AWARDS*/
+.hackathon-experience {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+.hackathon-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    border: 2px solid #4FAF44;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #010409;
+}
+
+.hackathon-text {
+    max-width: 50%;
+}
+
+.hackathon-text h3 {
+    color: #845ec2;
+    font-size: 24px;
+}
+
+.hackathon-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fafafa;
+}
+
+.hackathon-text a {
+    color: #845ec2;
+    text-decoration: none;
+}
+
+.hackathon-text a:hover {
+    text-decoration: underline;
+}
+
+.hackathon-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hackathon-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*ORGANIZATIONS*/
+.organizations-experience {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    padding-bottom: 8%;
+}
+
+.organization-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    border: 1px solid #4FAF44;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #010409;
+}
+
+.organization-text {
+    max-width: 50%;
+}
+
+.organization-text h3 {
+    color: #845ec2;
+    font-size: 24px;
+}
+
+.organization-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fafafa;
+}
+
+.organization-text a {
+    color: #4FAF44;
+    text-decoration: none;
+}
+
+.organization-text a:hover {
+    text-decoration: underline;
+}
+
+.organization-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.organization-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+        /* Skriva navbar na manjim uređajima */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #010409;
+        z-index: 10000;
+    }
+
+    .navbar.active {
+        display: flex;
+        /* Pojavljuje se navbar kad je aktivan */
+    }
+
+    .menu-toggle {
+        display: flex;
+        /* Pojavljuje se menu-toggle */
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        /* Pozicionira toggle dugme u desni ugao */
+        top: 15px;
+        /* Pozicionira toggle dugme u gornji ugao */
+    }
+
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fafafa;
+        margin: 4px 0;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .icon p {
+        font-size: 1rem;
+    }
+
+    .about {
+        width: 70%;
+    }
+
+    .about a {
+        font-size: 16px;
+    }
+
+    .popup-content {
+        position: relative;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .skill-category b {
+        font-size: 1em;
+    }
+
+    .skill-category li {
+        font-size: 14px;
+    }
+
+    .skill-category a {
+        font-size: 14px;
+    }
+
+    .skill b {
+        font-size: 1em;
+    }
+
+    .skill p {
+        font-size: 14px;
+    }
+
+    .icon p {
+        font-size: 1rem;
+    }
+
+    .navbar li a {
+        font-size: 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content a {
+        font-size: 14px;
+    }
+
+    .organization-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .organization-text {
+        max-width: 100%;
+    }
+
+    .organization-images {
+        width: 100%;
+        margin-top: 20px;
+        display: block; /* Ensure images stack vertically */
+    }
+
+    .organization-images img {
+        margin-top: 20px; /* Add spacing between images if needed */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        display: none;
+        /* Skriva navbar na manjim uređajima */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #010409;
+        z-index: 10000;
+    }
+
+    .navbar.active {
+        display: flex;
+        /* Pojavljuje se navbar kad je aktivan */
+    }
+
+    .menu-toggle {
+        display: flex;
+        /* Pojavljuje se menu-toggle */
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        /* Pozicionira toggle dugme u desni ugao */
+        top: 15px;
+        /* Pozicionira toggle dugme u gornji ugao */
+    }
+
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fafafa;
+        margin: 4px 0;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .popup-content {
+        margin-top: 2%;
+    }
+
+    .organization-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .organization-text {
+        max-width: 100%;
+    }
+
+    .organization-images {
+        width: 100%;
+        margin-top: 20px;
+        display: block; /* Ensure images stack vertically */
+    }
+
+    .organization-images img {
+        margin-top: 20px; /* Add spacing between images if needed */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .popup {
+        margin-top: 3%;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+    .navbar {
+        flex-direction: row;
+    }
+}

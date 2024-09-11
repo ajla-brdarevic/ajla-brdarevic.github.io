@@ -1,322 +1,291 @@
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Karla', sans-serif;
-    background-color: #FDF7FF;
-}
-
-section {
-    height: 100vh;
-    background-color: #A6B1E1;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 10vh;
-    background-color: #A6B1E1;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.sticky+.contet {
-    padding-top: 60px;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: #0d1117;
 }
 
 nav {
-    top: 0;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #A6B1E1;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  /* Dodano za vertikalno poravnanje */
+  align-items: flex-start;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #010409;
+  color: #fafafa;
 }
 
-nav img {
-    height: 10vh;
-    margin-left: 4%;
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  /* Prostor ispod ikone */
 }
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    margin-right: 20px;
+.icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  /* Razmak između slike i teksta */
 }
 
-.bar {
-    width: 100%;
-    height: 4px;
-    background-color: #22092C;
+.icon p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  /* Uklanja margine da bi se elemente poravnali */
 }
 
-.dark-theme .bar {
-    width: 100%;
-    height: 4px;
-    background-color: #A6B1E1;
+.icon a {
+  text-decoration: none;
+  color: #fafafa;
 }
 
 .navbar {
-    float: right;
-    margin-right: 20px;
-}
-
-.dark-theme .navbar {
-    background-color: #22092C;
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* Vertikalni prikaz li elemenata */
 }
 
 .navbar li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 10px;
+  margin: 5px 0;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #22092C;
+.navbar li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
 }
 
-.navbar a:hover {
-    color: #873D8C;
+/* Stil za aktivni link */
+.navbar li a.active {
+  border-bottom: 2px solid #845ec2;
+  /* Dodaje liniju ispod aktivnog linka */
+  color: #845ec2;
 }
 
-.btn {
-    top: 15px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-    align-items: center;
+/* Responsive Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.btn:focus {
-    outline-style: none;
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fafafa;
+  margin: 4px 0;
 }
-
-.light-theme {
-    background-color: #A6B1E1;
-    --btnBg: #22092C;
-    --btnFontColor: #A6B1E1;
-}
-
-.dark-theme {
-    background-color: #22092C;
-    color: #A6B1E1;
-    --btnBg: #A6B1E1;
-    --btnFontColor: #22092C;
-}
-
-.dark-theme nav {
-    background-color: #22092C;
-}
-
-.dark-theme .navbar a {
-    color: #A6B1E1;
-}
-
-.dark-theme .navbar a:hover {
-    color: #eee;
-}
-
-.header {
-    padding-top: 8%;
-    align-items: center;
-    text-align: center;
-  }
 
 .projects-container {
-    display: grid;
-    place-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  display: grid;
+  place-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.projects-container h2 {
+  text-align: left;
+  color: #fafafa;
 }
 
 .projects-row {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 3em;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3em;
 }
 
 .project {
-    background-color: white;
-    height: 400px;
-    width: 300px;
-    position: relative;
+  background-color: #010409;
+  height: 400px;
+  width: 300px;
+  position: relative;
 
 }
 
 .image {
-    width: 100%;
-    height: 40%;
+  width: 100%;
+  height: 40%;
 }
 
-h3 {
-    text-align: center;
-    margin-bottom: -4%;
-    color: black;
+.project h3 {
+  text-align: center;
+  margin-bottom: -4%;
+  color: #fafafa;
 }
 
-h5 {
-    text-align: center;
-    color: black;
+.project h5 {
+  text-align: center;
+  color: #fafafa;
 }
 
-p {
-    text-align: justify;
-    max-width: 250px;
-    margin-left: 6%;
-    color: black;
+.project p {
+  text-align: justify;
+  max-width: 250px;
+  margin-left: 6%;
+  color: #fafafa;
 }
 
-a {
-    max-width: 80px;
-    align-items: center;
+.project a {
+  max-width: 80px;
+  align-items: center;
+  color: #845ec2;
+  text-decoration: none;
 }
 
-.icon {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+.icon-git {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #FEFEDF;
-        z-index: 1000;
-        margin-top: 10vh;
-    }
+  .navbar {
+    display: none;
+    /* Skriva navbar na manjim uređajima */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #010409;
+    z-index: 1000;
+  }
 
-    .navbar.active {
-        display: block;
-    }
+  .navbar.active {
+    display: flex;
+    /* Pojavljuje se navbar kad je aktivan */
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+    display: flex;
+    /* Pojavljuje se menu-toggle */
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    /* Pozicionira toggle dugme u desni ugao */
+    top: 15px;
+    /* Pozicionira toggle dugme u gornji ugao */
+  }
 
-    .navbar li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 15%;
-    }
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
 
-    .projects-container {
-        padding-top: 30%;
-    }
+  nav {
+    justify-content: space-between;
+  }
 
-    .projects-row {
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 3em;
-    }
+  .icon p {
+    font-size: 1rem;
+  }
 
-    .header {
-        padding-top: 30%;
-        align-items: center;
-        text-align: center;
-      }
+  .projects-container {
+    padding-top: 30%;
+  }
+
+  .projects-row {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .navbar {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #A6B1E1;
-        z-index: 1000;
-        margin-top: 10vh;
-    }
+  .navbar {
+    display: none;
+    /* Skriva navbar na manjim uređajima */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #010409;
+    z-index: 1000;
+  }
 
-    .navbar.active {
-        display: block;
-    }
+  .navbar.active {
+    display: flex;
+    /* Pojavljuje se navbar kad je aktivan */
+  }
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+    display: flex;
+    /* Pojavljuje se menu-toggle */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    /* Pozicionira toggle dugme u desni ugao */
+    top: 15px;
+    /* Pozicionira toggle dugme u gornji ugao */
+  }
 
-    .navbar li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 15%;
-    }
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
 
-    .projects-container {
-        padding-top: 10%;
-    }
+  nav {
+    justify-content: space-between;
+  }
 
-    .projects-row {
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 3em;
-    }
+  .icon p {
+    font-size: 1rem;
+  }
 
-    .header {
-        padding-top: 20%;
-        align-items: center;
-        text-align: center;
-      }
+  .navbar li a {
+    font-size: 1rem;
+  }
+
+  .projects-container {
+    padding-top: 10%;
+  }
+
+  .projects-row {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .projects-container {
+    padding-top: 10%;
+  }
 
-    .projects-container {
-        padding-top: 10%;
-    }
-
-    .projects-row {
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 3em;
-    }
-    
-    .header {
-        padding-top: 15%;
-        align-items: center;
-        text-align: center;
-      }
+  .projects-row {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+  }
 }
 
-@media (min-width: 993px) {
-    .projects-container {
-        padding-top: 10%;
-    }
+@media (min-width: 993px) and (max-width: 1204px) {
+  .projects-container {
+    padding-top: 10%;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+  }
 }

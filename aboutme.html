@@ -1,484 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajla Brdarević</title>
+    <title>About Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesaboutme.css">
+    <link rel="stylesheet" href="aboutme.css">
     <link rel="icon" href="images/icon.png">
-  </head>
-
-<body class="light-theme">
-    <div class="hero">
-        <div class="nav">
-          <nav>
-            <div>
-              <a href="index.html"><img src="images/logo.png" class="light-image" alt="Logo"></a>
-              <a href="index.html"><img src="images/logo_dark.png" class="dark-image" alt="Logo"></a>
+    <script src="https://kit.fontawesome.com/85ea7624fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <div class="icon">
+                <a href="home.html"><img src="images/icon.png" alt="Logo"></a>
+                <a href="home.html">ajla-brdarević</a>
             </div>
             <div class="menu-toggle">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
             <ul class="navbar">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="aboutme.html">ABOUT ME</a></li>
-              <li><a href="projects.html">PROJECTS</a></li>
-              <li><a href="events.html">EVENTS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-              <li><button class="btn">theme</button></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutme.html" class="active">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
+    </div>
+
+    <div class="about">
+        <ol>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Technical skills</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Soft skills</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Academics</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Working experience</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Extracurricular</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Awards</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Organizations</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Hobbies</a></li>
+            <li><a class="arrow"><i class="fa-solid fa-arrow-right"></i>Career Aspirations</a></li>
+        </ol>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button id="backButton" class="back-button">&larr;</button>
+            <p id="popup-text"></p>
         </div>
-      </div>
+    </div>
 
-    <div class="page">
-        <div class="header">
-            <h1>About Me</h1>
-        </div>
-        <div class="archive">
-            <div class="card" style="background-image: url('images/icons/tehnical.png')" onclick="showPopup('popup1')">
-                <h3>Technical Skills</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/soft.png')" onclick="showPopup('popup2')">
-                <h3>Soft Skills</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/academic.png')" onclick="showPopup('popup3')">
-                <h3>Academics</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/work.png')" onclick="showPopup('popup4')">
-                <h3>Working Experience</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/extra.png')" onclick="showPopup('popup5')">
-                <h3>Extracurricular</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/awards.png')" onclick="showPopup('popup6')">
-                <h3>Awards</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/organizations.png')"
-                onclick="showPopup('popup7')">
-                <h3>Organizations</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/hobbies.png')" onclick="showPopup('popup8')">
-                <h3>Hobbies</h3>
-            </div>
-            <div class="card" style="background-image: url('images/icons/aspirations.png')"
-                onclick="showPopup('popup9')">
-                <h3>Career Aspirations</h3>
-            </div>
-
-            <div id="popup1" class="popup">
-                <div class="popup-content">
-                    <p><b>Web Development</b><br />- Frontend: HTML, CSS, JavaScript, React<br /> -
-                        Backend:
-                        Node.js, Java Spring Boot<br /></br>
-                        <b>Mobile App Development</b></br>- .NET MAUI, C#</br></br>
-                        <b>Programming Languages</b></br>- C++, C, C#, Python, JavaScript, Java<br><br>
-                        <b>Database: </b></br>- MySql, Mongo DB</br></br>
-                        <b>Testing: </b></br>- Manual, Automation in Selenium C#</br></br>
-                        <b>Design: </b></br>- Figma</br></br>
-                        <b>Agile: </b></br>- SCRUM, Sprint Design</br></br>
-                        <b>Embedded Systems: </b></br>- Arduino, C</br><br>
-                        <b>Version control: </b></br>- Git, GitHub</br><br>
-                        <b>Project management:</b><br>- Jira, Trello, Asana, Notion
-                    </p>
-                </div>
-            </div>
-
-            <div id="popup2" class="popup">
-                <div class="popup-content">
-                    <p><b>Analytical and Critical Thinking</b><br>
-                        - Proficient in dissecting complex problems, analyzing data, and deriving strategic insights to
-                        drive informed decision-making <br><br>
-                        <b>Active Learning Strategies</b><br>
-                        - Adept at adopting and implementing diverse learning approaches, ensuring continuous skill
-                        enhancement and staying abreast of industry trends.<br><br>
-                        <b>Creativity, Originality, Ideation, Innovation, and Initiative</b><br>
-                        - Demonstrates a flair for creative thinking, generating original ideas, and taking innovative
-                        initiatives to bring fresh perspectivesto projects.<br><br>
-                        <b>Adaptability and Flexibility</b><br>
-                        - Thrives in dynamic environments, showcasing the ability to adapt
-                        swiftly to change, and maintaining flexibility to excel in diverse professional scenarios.
-                    </p>
-                </div>
-            </div>
-
-            <div id="popup3" class="popup">
-                <div class="popup-content">
-                    <p>Completing my academic journey at the <a href="https://ptf.unze.ba/studijski-programi-si/">
-                            Polytechnic Faculty</a>, I immersed myself in a dynamic learning environment. The
-                        collaborative
-                        nature of group projects enhanced my ability to work effectively in teams. Grateful for the
-                        solid
-                        foundation and practical knowledge gained, the faculty has played a pivotal role in shaping my
-                        academic
-                        and professional growth. <br>
-                        In December 2023, I defended my bachelor's thesis on <a
-                            href="https://github.com/ajla-brdarevic/Smart-Home/tree/main">Smart Home</a> system as part
-                        of the Embedded
-                        Systems course. The project involved automation using IoT and the Blynk IoT mobile application.
-                    </p>
-                </div>
-            </div>
-
-            <div id="popup4" class="popup">
-                <div class="popup-content">
-                    <p><b>- Nauka govori - IT journalist</b><br>
-                        <u>January 2024 - Present</u><br>
-                    <p>I contribute part-time as a writer for the <a href="https://naukagovori.ba">'Nauka govori'</a>
-                        portal, with a specific focus on the IT
-                        industry. The portal is committed to advancing science and education, promoting scientific
-                        literacy, and advocating for human rights and civil society. It strives to improve science
-                        journalism in Bosnia and Herzegovina and the surrounding region, alongside promoting
-                        extracurricular education for both youth and adults. Drawing on practical knowledge, creativity,
-                        and a passion for scientific inquiry, I produce articles aimed at informing, inspiring, and
-                        engaging readers in the ever-evolving landscape of technology and innovation.</p>
-                    </p>
-                    <br><br>
-                    <p><b>- BH Telecom - internship</b><br>
-                        <u>August 2023 - September 2023, Zenica</u><br>
-                        I had the opportunity to undertake internship for one month at BH Telecom in directorate Zenica,
-                        working in the <i>Department for Technical Support</i>. During this internship, I worked in the
-                        team of <i>Office for Access Networks and Terminal Equipment</i> and <i>Communications Solutions
-                            and Preparation Office</i>, participating in optical cable testing, and even engaging in
-                        fieldwork</i>
-                        Besides gaining various technical skills, this experience provided insights into how a large
-                        corporation operates.
-                    </p>
-                </div>
-            </div>
-
-            <div id="popup5" class="popup">
-                <div class="popup-content">
-                    <a href="#" onclick="showInnerPopup('innerPopup1')">Cyber Security Winter School</a> - Sarajevo,
-                    Jaunary 2024 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup2')">Circuit Business Consulting Case Study</a>
-                    - Sarajevo, December 2023 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup3')">IT Girls Smart Automation Summer Camp</a>
-                    - Sarajevo, September 2023 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup4')">IT Girls - III Cycle of the Mentoring Program
-                    </a> - Online, December 2022 (mentee)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup5')">IT Girls - II Cycle of the Mentoring Program
-                    </a> - Online, December 2021 (mentee)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup6')">EYP Academy
-                    </a> - Sarajevo, May 2019 (PR Organizer)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup7')">EYP Member Training
-                    </a> - Kakanj, April 2019 (CR Organizer)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup8')">EYP 29th Regional Session
-                    </a> - Zenica, March 2019 (CR Organizer)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup9')">EYP B&H Members Weekend (NY’s Ball)
-                    </a> - Zenica, December 2018 (CR Organizer)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup10')">Meet and Code
-                    </a> - Zenica, October 2018 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup11')">EYP Alumni Training
-                    </a> - Zenica, October 2018 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup12')">Understanding Europe: Training for Trainers
-                    </a> - Sarajevo, October 2018 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup13')">City debating club "Agora": Public Debate
-                    </a> - Sarajevo, July 2018 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup14')">EYP "EU Crash Course" Understanding Europe
-                    </a> - Zenica, May 2018 (participant)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup15')">EYP National Session Basana
-                    </a> - Zenica-Sarajevo, April 2018 (delegate)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup16')">EYP Regional Forum
-                    </a> - Zenica, Februar 2018 (delegate)<br>
-                    <a href="#" onclick="showInnerPopup('innerPopup17')">EYP Regional Forum
-                    </a> - Zenica, December 2017 (delegate)<br>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup1">
-                <div class="popup-content">
-                    <h3>Cyber Security Winter School</h3>
-                    <img src="">
-                    <p><i>Issued by UNITED - udruženje za poticaj društvene odgovornosti · January 2024</i><br>
-                        Listening to experts from various segments of Cybersecurity, I have come to a better
-                        understanding of how dynamic this field is and how much diversity contributes to its success.
-                        However, it also reminded me of how, in today's world where we are all targets of various cyber
-                        attacks, where AI and various technologies that are still being developed are being abused, each
-                        of us must be our own Cyber expert.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup2">
-                <div class="popup-content">
-                    <h3>Circuit Business Consulting Case Study</h3>
-                    <img src="images/certificates/cbc.png">
-                    <p><i>Issued by Circuit Business Consulting · December 2023</i><br>
-                        One-day workshop: Addressing Real-World Challenges for an Automotive Company
-                    </p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup3">
-                <div class="popup-content">
-                    <h3>IT Girls Smart Automation Summer Camp</h3>
-                    <img src="">
-                    <p><i>Issued by IT Girls Bosnia and Herzegovina · September 2023</i><br>
-                        Workshops: Artificial Intelligence, Arduino, Robots and Cobots, Project Management in Industry
-                        5.0</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup4">
-                <div class="popup-content">
-                    <h3>IT Girls - III Cycle of the Mentoring Program</h3>
-                    <img src="">
-                    <p><i>Issued by IT Girls Bosnia and Herzegovina · December 2022</i><br>
-                        Quality Assurance - Manual and Automation Testing</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup5">
-                <div class="popup-content">
-                    <h3>IT Girls - II Cycle of the Mentoring Program</h3>
-                    <img src="">
-                    <p><i>Issued by IT Girls Bosnia and Herzegovina · December 2021</i><br>
-                        Basics of Python with Embedded Systems, Arduino</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup6">
-                <div class="popup-content">
-                    <h3>EYP Academy</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · May 2019</i><br>
-                        I participated as organiser - Public Relations. The Academy 2019 featured modules on the
-                        functioning of EYP, Head Organising and Corporate Relations, Outreach and inclusion and creation
-                        of strategy. Also, it featured Annual Assembly of EYP Bosnia and Herzegovina 2019 which included
-                        Presidential Elections for the 2019/20 term and changes to the rule book. I had a chance to work
-                        on my social skills, communication and presenting skills. Also, it was my job to work on
-                        designing promotional products for the first time.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup7">
-                <div class="popup-content">
-                    <h3>EYP Member Training</h3>
-                    <img src="">
-                    <p><i>Issued by Ruropean Youth Parliament · April 2019</i><br>
-                        Member training is event where we tried to expand office in Zenica and motivate young people to
-                        work on their soft skills as the part of EYP in Bosnia and Hercegovina. Trainings were modified
-                        for those who have not yet been in the role of an EYP Official. I participated as an organiser
-                        on this event - Corporate Responsibility.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup8">
-                <div class="popup-content">
-                    <h3>EYP 29th Regional Session</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · March 2019</i><br>
-                        I participated as an organiser - Corporate Responsibility where I had a chance to improve my
-                        communication skills, financial analysis, organisation skills and problem solving skills. My
-                        role was to make sure we have sponsors and to promote to them the aim of our organisation to the
-                        biggest bussines in our country. It was my honour that most of them recognised our potential and
-                        thought about problems that we perceived.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup9">
-                <div class="popup-content">
-                    <h3>EYP B&H Members Weekend (NY’s Ball)</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · December 2018</i><br>
-                        I participated as an organizer (Corporate Responsibility). Members Weekend is an event that
-                        brings together all members of our organization in Bosnia and Herzegovina, where current
-                        problems are discussed, future events are planned and we work on our communication skills,
-                        teamwork, public speaking and critical thinking.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup10">
-                <div class="popup-content">
-                    <h3>Meet and Code</h3>
-                    <img src="">
-                    <p><i>Issued by International Burch University, ASuBiH · October 2018</i><br>
-                        Coding weekend for high school students where we learned about the basics of Arduino and mobile
-                        application development in Java</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup11">
-                <div class="popup-content">
-                    <h3>EYP Alumni Training</h3>
-                    <img src="">
-                    <p>
-                        <i>Issued by Erupean Youth Parliament · October 2018</i><br>
-                        I participated as treinee. The event was a one-day members event for EYP BiH members where
-                        trainees were be able to participate and learn how to go through different roles within EYP.
-                    </p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup12">
-                <div class="popup-content">
-                    <h3>Understanding Europe: Training for Trainers</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament, Understanding Europe · October 2018</i><br>
-                        I participated as trainee so that I could have the role of mentor/coach in the workshops.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup13">
-                <div class="popup-content">
-                    <h3>City debating club "Agora": Public Debate </h3>
-                    <img src="">
-                    <p><i>Issued by City debating club "Agora", Zenica · Jul 2018</i><br>
-                        I participated as a debater. Debate on the topic: Citizens of BiH who do not vote in elections
-                        should pay fines. The debate was in Karl Popper format.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup14">
-                <div class="popup-content">
-                    <h3>EYP "EU Crash Course" Understanding Europe</h3>
-                    <img src="">
-                    <p><i>Issued by Understanding Europe, European Youth Parliament · May 2018</i><br>
-                        Understanding Europe is a project by the Schwarzkopf Foundation and the European Youth
-                        Parliament in Bosnia and Herzegovina in cooperation with the Mercator Foundation. Through this
-                        course we have aquired knowledge in international teamwork, languages, intercultural
-                        communication and European politics.Understanding Europe is a project by the Schwarzkopf
-                        Foundation and the European Youth Parliament in Bosnia and Herzegovina in cooperation with the
-                        Mercator Foundation. Through this course we have aquired knowledge in international teamwork,
-                        languages, intercultural communication and European politics.
-                    </p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup15">
-                <div class="popup-content">
-                    <h3>EYP National Session Basana </h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · April 2018</i><br>
-                        I participated as delegate of the Committee on Culture and Education. We had to write motion for
-                        a Resolution on the topic: With most mainstream schools in Bosnia and Herzegovina not yet being
-                        ready to accept children with disabilities, what should the approach be to improving country's
-                        special needs education?</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup16">
-                <div class="popup-content">
-                    <h3>EYP Regional Forum</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · Februar 2018</i><br>
-                        I participated as delegate of the Committee on Legal Affairs. We hade to write motion for a
-                        Resolution related to right to vote. Due to un-harmonised national legislation and laws between
-                        Member States of the EU, the right to vote has been taken from the European citizens who moved
-                        to their host countries. In six Member States generations of citizens are unable to vote in
-                        either their host or native countries national elections.</p>
-                </div>
-            </div>
-
-            <div class="popup" id="innerPopup17">
-                <div class="popup-content">
-                    <h3>EYP Regional Forum</h3>
-                    <img src="">
-                    <p><i>Issued by European Youth Parliament · December 2017</i><br>
-                        I participated as delegate of the Committee on Economic and Monetary Affairs. We had to write
-                        motion for a Resolution on the topic: How can the national authorities entice the people of this
-                        country to stay and work for the improvement of the economy?</p>
-                </div>
-            </div>
-
-            <div id="popup6" class="popup">
-                <div class="popup-content">
-                    <img src="images/reconnect.JPG">
-                    <p>One of the standout experiences I must highlight is the <a
-                            href="https://ptf.unze.ba/svecano-urucene-nagrade-pobjednicima-takmicenja-reconnect-hackathon/">Reconnect
-                            Hackathon</a>, held in October 2022. It was an unforgettable event where my team, "Code of
-                        Duty," clinched<i>
-                            the second place</i> with the idea for the mobile app "Time for a Challenge". We leveraged
-                        our academic
-                        knowledge in <i>software analysis and design</i> while venturing into uncharted territories. The
-                        Reconnect
-                        Hackathon pushed us to explore new technologies, like <i>Swift</i>, for the first time.
-                    </p>
-                </div>
-            </div>
-
-            <div id="popup7" class="popup">
-                <div class="popup-content">
-                    <img src="images/eyp.jpg">
-                    <p>Among the numerous organizations, <a href="https://eyp.org">European Youth
-                            Parliament</a> captured my attention the most. I dedicated most of my time to EYP, in
-                        return, I learned many soft skills, improved my English language, and had
-                        the opportunity to meet a diverse individuals. As a delegate, organizer, and regional
-                        coordinator, I learned to work within a group, while also independently shouldering
-                        responsibility for significant matters. From handling bureaucratic issues to event organization
-                        and project writing, to engaging in political discussions, this
-                        organization has undeniably had a profound impact on my personal and professional development.
-                    </p><br>
-                </div>
-            </div>
-
-            <div id="popup8" class="popup">
-                <div class="popup-content">
-                    <img src="images/ballet.jpg">
-                    <p>Besides technology, another constant in my life has been art. I attended both a music school
-                        and ballet school. I play the <i>violin</i>, <i>piano</i>, and <i>guitar</i>, and I used to
-                        dance <i>ballet</i>.
-                        <i>Moscow International Festival of Slavic Music</i> is the moment I hold dear and always
-                        cherish, because I was awarded a special prize.
-                    </p>
-                    <br>
-                    <p>As a programming 'polyglot,' I've expanded my language talents beyond code to human
-                        languages.
-                        Learning new languages has become a quirky hobby, enhancing my Netflix experience and adding
-                        a
-                        touch
-                        of wanderlust. Recently, I've taken up sewing, merging creativity with environmental
-                        consciousness
-                        in sustainable fashion.
-                        My diverse interests include crossword puzzles, quizzes, a passion for
-                        Formula 1, and a dedication to films, series, books, and music.
-                </div>
-            </div>
-
-            <div id="popup9" class="popup">
-                <div class="popup-content">
-                    <p>Currently, I am open to exploring a wide range of career opportunities within the field of
-                        software engineering. I embrace the idea of versatility and am not hesitant to venture into
-                        any
-                        career path that aligns with my passion and expertise. I firmly believe that every
-                        opportunity,
-                        regardless of its specific focus, has the potential to be a stepping stone in my journey. My
-                        plan
-                        for the future is to pursue a master's degree in software engineering, allowing me to
-                        complete the
-                        bigger picture.<br><br>
-                        Along the way, I aim to gain valuable work experience to further develop my technical
-                        skills,
-                        and to explore different facets of the industry to find the path I'd like to commit to in
-                        the long
-                        run. While my studies have exposed me to a broad spectrum of topics, a few areas have
-                        particularly
-                        piqued my interest: Embedded systems and the Internet of Things (IoT) and I've delved into
-                        diverse
-                        back-end development techniques for various types of applications. While I'm increasingly
-                        drawn to AI, I
-                        acknowledge that I may not yet possess the depth of knowledge and experience required to
-                        prioritize it as my sole focus.<br> <br>
-                        Moreover, I've always been drawn to the idea of blending my technical expertise with skills
-                        I've acquired over time and excel in naturally. Collaborating within a team dynamic and
-                        assuming leadership roles is one such skill set. Hence, I've chosen this career path,
-                        allowing me to integrate my evolving technical skills with my passion for exploring business
-                        strategies
-                        and life cycle of developing a certain product.
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
+    <script src="aboutme.js"></script>
 </body>
-
-<script src="app.js"></script>
-
 </html>

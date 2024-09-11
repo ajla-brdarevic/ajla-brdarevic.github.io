@@ -1,0 +1,121 @@
+body {
+    overflow-x: hidden;
+    font-family: Helvetica;
+    color: #fff;
+    background: #000;
+    margin: 20px 0px;
+}
+
+div {
+    width: 100%;
+    text-align: center;
+    animation: gradient 2.4s infinite ease-in-out;
+    letter-spacing: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+    text-indent: 10px;
+    margin-top: 25%;
+}
+
+
+.a01 {
+    animation-delay: 0.1s;
+}
+
+@keyframes gradient {
+    0% {
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    40% {
+        letter-spacing: 16px;
+        text-indent: 20px;
+    }
+
+    80% {
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+
+    100% {
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    div {
+        letter-spacing: 5px;
+        font-size: 10px;
+        text-indent: 5px;
+        margin-top: 100%;
+    }
+    
+    @keyframes gradient {
+        0% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+        40% {
+            letter-spacing: 8px;
+            text-indent: 10px;
+        }
+    
+        80% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+    
+        100% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    div {
+        letter-spacing: 5px;
+        font-size: 16px;
+        text-indent: 5px;
+        margin-top: 50%;
+    }
+    
+    @keyframes gradient {
+        0% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+        40% {
+            letter-spacing: 8px;
+            text-indent: 10px;
+        }
+    
+        80% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+    
+        100% {
+            letter-spacing: 4px;
+            text-indent: 5px;
+        }
+    
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    div {
+        letter-spacing: 5px;
+        text-indent: 5px;
+        margin-top: 40%;
+    }
+}

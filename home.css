@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: #0d1117;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  /* Dodano za vertikalno poravnanje */
+  align-items: flex-start;
+  padding: 1rem 1rem 0 1rem;
+  background-color: #010409;
+  color: #fafafa;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  /* Prostor ispod ikone */
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px; /* Razmak između slike i teksta */
+}
+
+.icon p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0; /* Uklanja margine da bi se elemente poravnali */
+}
+
+.icon a{
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* Vertikalni prikaz li elemenata */
+}
+
+.navbar li {
+  margin: 5px 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+}
+
+/* Stil za aktivni link */
+.navbar li a.active {
+  border-bottom: 2px solid #845ec2;
+  /* Dodaje liniju ispod aktivnog linka */
+  color: #845ec2;
+}
+
+/* Responsive Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/*slike*/
+.images {
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  top: 20%;
+  left: 1%;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .image {
+  left: 45%;
+}
+
+.new-div {
+  background-color: #0d1117;
+  padding: 20px;
+  margin-top: 25%;
+  margin-left: 7%;
+  width: 18%;
+  color: #010409;
+  display: flex;
+  /* Postavlja sadržaj u horizontalni raspored */
+  flex-direction: column;
+  align-items: left;
+  /* Poravnava tekst i sliku vertikalno po sredini */
+  gap: 10px;
+  /* Dodaje razmak između slike i teksta */
+}
+
+.item {
+  display: flex;
+  /* Postavlja sliku i tekst pored jedno drugog */
+  align-items: center;
+  /* Poravnava sliku i tekst vertikalno */
+  gap: 10px;
+  /* Razmak između slike i teksta */
+}
+
+.item img {
+  width: 20px;
+  /* Postavi širinu slikica */
+  height: auto;
+  /* Zadrži proporcije slike */
+}
+
+.item p {
+  margin: 0;
+  /* Ukloni dodatni margine na p elementima */
+  font-size: 1rem;
+  /* Prilagodi veličinu teksta po potrebi */
+  color: #fafafa;
+}
+
+.item a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.item a:hover {
+  color: #845ec2;
+}
+
+.about {
+  border: 0.5px solid grey;
+  color: #fafafa;
+  padding: 20px;
+  /* Dodaje razmak unutar okvira */
+  border-radius: 5px;
+  /* Dodaje zaobljene ivice */
+  width: 60%;
+  margin-left: 30%;
+  margin-top: -32%;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.readme {
+  font-size: 12px;
+}
+
+hr {
+  border: 0.5px solid grey;
+}
+
+.about a {
+  text-decoration: underline;
+  color: #fafafa;
+}
+
+.about a:hover {
+  color: #845ec2;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .navbar {
+    display: none;
+    /* Skriva navbar na manjim uređajima */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #010409;
+    z-index: 1000;
+  }
+
+  .navbar.active {
+    display: flex;
+    /* Pojavljuje se navbar kad je aktivan */
+  }
+
+  .menu-toggle {
+    display: flex;
+    /* Pojavljuje se menu-toggle */
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    /* Pozicionira toggle dugme u desni ugao */
+    top: 15px;
+    /* Pozicionira toggle dugme u gornji ugao */
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .icon p {
+    font-size: 1rem;
+  }
+
+  .images {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+  }
+
+  .new-div {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 80%;
+  }
+
+  .about {
+    width: 90%;
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+    /* Skriva navbar na manjim uređajima */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #010409;
+    z-index: 1000;
+  }
+
+  .navbar.active {
+    display: flex;
+    /* Pojavljuje se navbar kad je aktivan */
+  }
+
+  .menu-toggle {
+    display: flex;
+    /* Pojavljuje se menu-toggle */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    /* Pozicionira toggle dugme u desni ugao */
+    top: 15px;
+    /* Pozicionira toggle dugme u gornji ugao */
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .icon p {
+    font-size: 1rem;
+  }
+
+  .navbar li a {
+    font-size: 1rem;
+  }
+
+  .images {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+  }
+
+  .new-div {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 80%;
+  }
+
+  .about {
+    width: 95%;
+    margin-left: 0%;
+    margin-top: 2%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .images {
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+
+  .new-div {
+    margin-left: 2%;
+    width: 80%;
+  }
+
+  .about {
+    width: 60%;
+    margin-left: 30%;
+    margin-top: -40%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1204px) {
+  .images {
+    width: 25%;
+    height: 30%;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
