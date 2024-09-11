@@ -11,6 +11,7 @@ The portfolio is built using:
 - **HTML5** for structure
 - **CSS3** for styling
 - **JavaScript** for interactivity
+- **freefrontend.com** for some ideas
 
 ## 🌐 Live Website
 
