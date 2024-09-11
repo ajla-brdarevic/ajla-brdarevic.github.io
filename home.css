@@ -7,7 +7,6 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  /* Dodano za vertikalno poravnanje */
   align-items: flex-start;
   padding: 1rem 1rem 0 1rem;
   background-color: #010409;
@@ -18,19 +17,18 @@ nav {
   display: flex;
   align-items: center;
   margin-bottom: 4px;
-  /* Prostor ispod ikone */
 }
 
 .icon img {
   width: 30px;
   height: 30px;
-  margin-right: 12px; /* Razmak između slike i teksta */
+  margin-right: 12px; 
 }
 
 .icon p {
   font-size: 16px;
   font-weight: bold;
-  margin: 0; /* Uklanja margine da bi se elemente poravnali */
+  margin: 0; 
 }
 
 .icon a{
@@ -44,7 +42,6 @@ nav {
   margin: 0;
   display: flex;
   flex-direction: column;
-  /* Vertikalni prikaz li elemenata */
 }
 
 .navbar li {
@@ -58,14 +55,11 @@ nav {
   padding: 0.5rem 1rem;
 }
 
-/* Stil za aktivni link */
 .navbar li a.active {
   border-bottom: 2px solid #845ec2;
-  /* Dodaje liniju ispod aktivnog linka */
   color: #845ec2;
 }
 
-/* Responsive Menu Toggle Button */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -113,35 +107,25 @@ nav {
   width: 18%;
   color: #010409;
   display: flex;
-  /* Postavlja sadržaj u horizontalni raspored */
   flex-direction: column;
   align-items: left;
-  /* Poravnava tekst i sliku vertikalno po sredini */
   gap: 10px;
-  /* Dodaje razmak između slike i teksta */
 }
 
 .item {
   display: flex;
-  /* Postavlja sliku i tekst pored jedno drugog */
   align-items: center;
-  /* Poravnava sliku i tekst vertikalno */
   gap: 10px;
-  /* Razmak između slike i teksta */
 }
 
 .item img {
   width: 20px;
-  /* Postavi širinu slikica */
   height: auto;
-  /* Zadrži proporcije slike */
 }
 
 .item p {
   margin: 0;
-  /* Ukloni dodatni margine na p elementima */
   font-size: 1rem;
-  /* Prilagodi veličinu teksta po potrebi */
   color: #fafafa;
 }
 
@@ -158,9 +142,7 @@ nav {
   border: 0.5px solid grey;
   color: #fafafa;
   padding: 20px;
-  /* Dodaje razmak unutar okvira */
   border-radius: 5px;
-  /* Dodaje zaobljene ivice */
   width: 60%;
   margin-left: 30%;
   margin-top: -32%;
@@ -185,11 +167,9 @@ hr {
   color: #845ec2;
 }
 
-/* Responsive Styles */
 @media (max-width: 480px) {
   .navbar {
     display: none;
-    /* Skriva navbar na manjim uređajima */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -201,18 +181,14 @@ hr {
 
   .navbar.active {
     display: flex;
-    /* Pojavljuje se navbar kad je aktivan */
   }
 
   .menu-toggle {
     display: flex;
-    /* Pojavljuje se menu-toggle */
     flex-direction: column;
     position: absolute;
     right: 20px;
-    /* Pozicionira toggle dugme u desni ugao */
     top: 15px;
-    /* Pozicionira toggle dugme u gornji ugao */
   }
 
   .menu-toggle .bar {
@@ -254,7 +230,6 @@ hr {
 @media (min-width: 481px) and (max-width: 768px) {
   .navbar {
     display: none;
-    /* Skriva navbar na manjim uređajima */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -266,19 +241,15 @@ hr {
 
   .navbar.active {
     display: flex;
-    /* Pojavljuje se navbar kad je aktivan */
   }
 
   .menu-toggle {
     display: flex;
-    /* Pojavljuje se menu-toggle */
     flex-direction: column;
     cursor: pointer;
     position: absolute;
     right: 20px;
-    /* Pozicionira toggle dugme u desni ugao */
     top: 15px;
-    /* Pozicionira toggle dugme u gornji ugao */
   }
 
   .menu-toggle .bar {

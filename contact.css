@@ -7,7 +7,6 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    /* Dodano za vertikalno poravnanje */
     align-items: flex-start;
     padding: 1rem 1rem 0 1rem;
     background-color: #010409;
@@ -18,21 +17,18 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 4px;
-    /* Prostor ispod ikone */
 }
 
 .icon img {
     width: 30px;
     height: 30px;
     margin-right: 12px;
-    /* Razmak između slike i teksta */
 }
 
 .icon p {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
-    /* Uklanja margine da bi se elemente poravnali */
 }
 
 .icon a {
@@ -46,7 +42,6 @@ nav {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* Vertikalni prikaz li elemenata */
 }
 
 .navbar li {
@@ -60,14 +55,11 @@ nav {
     padding: 0.5rem 1rem;
 }
 
-/* Stil za aktivni link */
 .navbar li a.active {
     border-bottom: 2px solid #845ec2;
-    /* Dodaje liniju ispod aktivnog linka */
     color: #845ec2;
 }
 
-/* Responsive Menu Toggle Button */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -224,7 +216,6 @@ nav {
 @media (max-width: 480px) {
     .navbar {
         display: none;
-        /* Skriva navbar na manjim uređajima */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -236,18 +227,14 @@ nav {
 
     .navbar.active {
         display: flex;
-        /* Pojavljuje se navbar kad je aktivan */
     }
 
     .menu-toggle {
         display: flex;
-        /* Pojavljuje se menu-toggle */
         flex-direction: column;
         position: absolute;
         right: 20px;
-        /* Pozicionira toggle dugme u desni ugao */
         top: 15px;
-        /* Pozicionira toggle dugme u gornji ugao */
     }
 
     .menu-toggle .bar {
@@ -293,7 +280,6 @@ nav {
 @media (min-width: 481px) and (max-width: 768px) {
     .navbar {
         display: none;
-        /* Skriva navbar na manjim uređajima */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -305,19 +291,15 @@ nav {
 
     .navbar.active {
         display: flex;
-        /* Pojavljuje se navbar kad je aktivan */
     }
 
     .menu-toggle {
         display: flex;
-        /* Pojavljuje se menu-toggle */
         flex-direction: column;
         cursor: pointer;
         position: absolute;
         right: 20px;
-        /* Pozicionira toggle dugme u desni ugao */
         top: 15px;
-        /* Pozicionira toggle dugme u gornji ugao */
     }
 
     .menu-toggle .bar {
@@ -376,7 +358,6 @@ nav {
 
 @media (min-width: 993px) and (max-width: 1204px) {}
 
-/* Larger Screens */
 @media (min-width: 769px) {
     .navbar {
         flex-direction: row;

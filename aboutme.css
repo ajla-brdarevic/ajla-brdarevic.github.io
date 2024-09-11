@@ -7,7 +7,6 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    /* Dodano za vertikalno poravnanje */
     align-items: flex-start;
     padding: 1rem 1rem 0 1rem;
     background-color: #010409;
@@ -18,21 +17,18 @@ nav {
     display: flex;
     align-items: center;
     margin-bottom: 4px;
-    /* Prostor ispod ikone */
 }
 
 .icon img {
     width: 30px;
     height: 30px;
     margin-right: 12px;
-    /* Razmak između slike i teksta */
 }
 
 .icon p {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
-    /* Uklanja margine da bi se elemente poravnali */
 }
 
 .icon a {
@@ -46,7 +42,6 @@ nav {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* Vertikalni prikaz li elemenata */
 }
 
 .navbar li {
@@ -60,14 +55,11 @@ nav {
     padding: 0.5rem 1rem;
 }
 
-/* Stil za aktivni link */
 .navbar li a.active {
     border-bottom: 2px solid #845ec2;
-    /* Dodaje liniju ispod aktivnog linka */
     color: #845ec2;
 }
 
-/* Responsive Menu Toggle Button */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -123,10 +115,8 @@ nav {
     left: -6em;
 }
 
-/* Pop-up styles */
 .popup {
     display: none;
-    /* Hidden initially */
     position: fixed;
     top: 12%;
     left: 0;
@@ -134,22 +124,18 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
-    /* Above all other elements */
 }
 
 .popup-content {
     position: relative;
     margin: 5% auto;
-    /* Centering popup */
     padding: 20px;
     background-color: #0d1117;
     border-radius: 10px;
     color: #fafafa;
     width: 90%;
     max-height: 85%;
-    /* Ensure popup does not overflow screen */
     overflow-y: auto;
-    /* Enable vertical scrolling */
     text-align: center;
     animation: popupAnimation 0.3s ease-in-out;
 }
@@ -165,7 +151,6 @@ nav {
     cursor: pointer;
 }
 
-/* Animation for popup */
 @keyframes popupAnimation {
     from {
         opacity: 0;
@@ -196,7 +181,6 @@ nav {
 .skill-category b {
     font-size: 1.2em;
     color: #845ec2;
-    /* Plava boja za naglašavanje */
 }
 
 .skill-category ul {
@@ -220,25 +204,20 @@ nav {
 .soft-skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Kolone koje se automatski prilagođavaju */
     gap: 20px;
-    /* Razmak između elemenata */
     padding: 20px;
     color: #fafafa;
     text-align: left;
-    /* Tekst levo poravnat */
 }
 
 .skill {
     background-color: #010409;
-    /* Pozadina za svaki skill */
     border-radius: 8px;
     padding: 15px;
 }
 
 .skill b {
     display: block;
-    /* Čini <b> element blok elementom */
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #845ec2;
@@ -246,7 +225,6 @@ nav {
 
 .skill p {
     margin: 0;
-    /* Uklanja zadnji razmak */
     text-align: left;
 }
 
@@ -360,9 +338,7 @@ a:hover {
     padding: 20px;
     padding-bottom: 8%;
     overflow-x: auto;
-    /* Enables horizontal scrolling */
     overflow-y: hidden;
-    /* Hide vertical scrollbar */
     white-space: nowrap;
 }
 
@@ -385,7 +361,6 @@ a:hover {
 .card-content {
     padding: 15px;
     flex: 1;
-    /* Allows content to grow and fill the available space */
 }
 
 .card-content h2 {
@@ -543,7 +518,6 @@ a:hover {
 @media (max-width: 480px) {
     .navbar {
         display: none;
-        /* Skriva navbar na manjim uređajima */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -555,18 +529,14 @@ a:hover {
 
     .navbar.active {
         display: flex;
-        /* Pojavljuje se navbar kad je aktivan */
     }
 
     .menu-toggle {
         display: flex;
-        /* Pojavljuje se menu-toggle */
         flex-direction: column;
         position: absolute;
         right: 20px;
-        /* Pozicionira toggle dugme u desni ugao */
         top: 15px;
-        /* Pozicionira toggle dugme u gornji ugao */
     }
 
     .menu-toggle .bar {
@@ -648,18 +618,17 @@ a:hover {
     .organization-images {
         width: 100%;
         margin-top: 20px;
-        display: block; /* Ensure images stack vertically */
+        display: block; 
     }
 
     .organization-images img {
-        margin-top: 20px; /* Add spacing between images if needed */
+        margin-top: 20px; 
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .navbar {
         display: none;
-        /* Skriva navbar na manjim uređajima */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -671,19 +640,15 @@ a:hover {
 
     .navbar.active {
         display: flex;
-        /* Pojavljuje se navbar kad je aktivan */
     }
 
     .menu-toggle {
         display: flex;
-        /* Pojavljuje se menu-toggle */
         flex-direction: column;
         cursor: pointer;
         position: absolute;
         right: 20px;
-        /* Pozicionira toggle dugme u desni ugao */
         top: 15px;
-        /* Pozicionira toggle dugme u gornji ugao */
     }
 
     .menu-toggle .bar {
@@ -713,11 +678,11 @@ a:hover {
     .organization-images {
         width: 100%;
         margin-top: 20px;
-        display: block; /* Ensure images stack vertically */
+        display: block; 
     }
 
     .organization-images img {
-        margin-top: 20px; /* Add spacing between images if needed */
+        margin-top: 20px; 
     }
 }
 
