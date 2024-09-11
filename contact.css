@@ -268,7 +268,7 @@ nav {
     .social {
         flex-direction: column;
         align-items: center;
-        padding-top: 50%;
+        padding-top: 30%;
     }
 
     .social li {
