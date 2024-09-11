@@ -321,12 +321,12 @@ hr {
 }
 
 /* Larger Screens */
-@media (min-width: 769px) {
+@media (min-width: 1205px) {
   .navbar {
     flex-direction: row;
   }
 
   .about {
-    margin-top: 20%;
+    margin-top: 25%;
   }
 }
