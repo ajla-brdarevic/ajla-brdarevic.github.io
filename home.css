@@ -325,4 +325,8 @@ hr {
   .navbar {
     flex-direction: row;
   }
+
+  .about {
+    margin-top: 20%;
+  }
 }
