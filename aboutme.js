@@ -20,35 +20,18 @@ listItems.forEach((item, index) => {
             <div class="technical-skills-grid">
 
                 <div class="skill-category">
-                    <b>Web Development</b><br>
+                    <b>Web Development</b>
                     <ul><br>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/frontend" target="_blank">Frontend</a>: HTML, CSS, JavaScript, React</li>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/backend" target="_blank">Backend</a>: Node.js, Java Spring Boot</li><br>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/web-development" target="_blank">Projects</a></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <b>Mobile App Development</b>
-                    <ul><br>
-                        <li>.NET MAUI, C#</li><br><br>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/mobile-app-development" target="_blank">Projects</a></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                <b>Testing</b>
-                    <ul><br>
-                        <li>Manual, Automation in Selenium C#</li><br><br>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/testing" target="_blank">Projects</a></li>
+                        <li>HTML, CSS, JavaScript, React, Node.js</li>
+                        <li><a href="https://github.com/ajla-brdarevic#web-apps-and-web-pages" target="_blank">Projects</a></li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
                 <b>Embedded Systems</b>
                     <ul><br>
-                        <li>Arduino, C/C++</li><br><br>
-                        <li><a href="https://github.com/stars/ajla-brdarevic/lists/embedded-systems" target="_blank">Projects</a></li>
+                        <li>Arduino, C/C++</li>
+                        <li><a href="https://github.com/ajla-brdarevic#electronics-embedded-systems" target="_blank">Projects</a></li>
                     </ul>
                 </div>
 
@@ -59,12 +42,6 @@ listItems.forEach((item, index) => {
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <b>Design</b>
-                    <ul><br>
-                        <li>Figma</li>
-                    </ul>
-                </div>
                 <div class="skill-category">
                     <b>Agile</b>
                     <ul><br>
@@ -93,6 +70,44 @@ listItems.forEach((item, index) => {
                     </ul>
                 </div>
 
+                <div class="skill-category">
+                    <b>Artificial intelligence</b>
+                    <ul><br>
+                        <li>AI&ML Algorithms</li>
+                        <li><a href="https://github.com/ajla-brdarevic#mlai-projects" target="_blank">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <b>Business intelligence</b>
+                    <ul><br>
+                        <li>DW, Data Analytics</li>
+                        <li><a href="https://github.com/ajla-brdarevic#busineas-intelligence-projects" target="_blank">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <b>Mobile App Development</b>
+                    <ul><br>
+                        <li>.NET MAUI, C#</li>
+                        <li><a href="https://github.com/ajla-brdarevic#mobile-apps" target="_blank">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                <b>Testing</b>
+                    <ul><br>
+                        <li>Manual, Automation in Selenium C#</li>
+                        <li><a href="https://github.com/ajla-brdarevic#testing" target="_blank">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <b>Design</b>
+                    <ul><br>
+                        <li>Figma</li>
+                    </ul>
+                </div>
             </div>`;
                 break;
 
@@ -159,12 +174,13 @@ listItems.forEach((item, index) => {
                 content = `
                 <div class="experience-timeline">
                     <div class="experience-item">
-                        <div class="experience-date">January 2024</div>
-                            <h3>- Nauka govori - IT journalist</h3>
-                            <p> I contribute part-time as a writer for the 
-                            <a href="https://naukagovori.ba" target="_blank">Nauka govori</a> portal, with a specific focus on the IT industry. The portal promotes 
-                            scientific literacy, human rights, and education in Bosnia and Herzegovina. 
-                            <br><a href ="https://naukagovori.ba/defanziva-protiv-cyber-napada-od-phishinga-do-denial-of-service-kako-se-zastititi/" target="_blank">My Work on Nauka Govori!</a>
+                        <div class="experience-date">December 2024 - February 2025</div>
+                            <h3>- Toolbox BiH - ASA Banka - Mastercard - Customer Experience Assistant - Contract</h3>
+                            <p> 2-months project aimed at transitioning clients from traditional cash desk services to ATM usage. My role involved:
+                            <ul>
+                                <li>Communicating with bank clients to educate them on the functionality and security of using ATMs.</li>
+                                <li>Guiding clients through the step-by-step process of withdrawing cash and addressing potential issues, such as forgotten PINs, card retrieval problems, or lost cards.</li>
+                                <li>Supporting clients in adopting ATM usage as a secure, fast, and convenient solution for banking services.</li>
                             </p>
                         </div>
 
@@ -181,10 +197,51 @@ listItems.forEach((item, index) => {
 `;
                 break;
 
-            //Extracurriicular
+            // Articles
             case 4:
                 content = `
+                <div class="article-timeline">
+                    <div class="article-item">
+                        <div class="article-date">January 2024</div>
+                            <h3>- Nauka govori - IT journalist</h3>
+                            <p> I contribute part-time as a writer for the 
+                            <a href="https://naukagovori.ba" target="_blank">Nauka govori</a> portal, with a specific focus on the IT industry. The portal promotes 
+                            scientific literacy, human rights, and education in Bosnia and Herzegovina. 
+                            <br><a href ="https://naukagovori.ba/defanziva-protiv-cyber-napada-od-phishinga-do-denial-of-service-kako-se-zastititi/" target="_blank">My Work on Nauka Govori!</a>
+                            </p>
+                        </div>
+                </div>
+`;
+                break;
+
+            //Extracurriicular
+            case 5:
+                content = `
                 <div class="card-container">
+                 <div class="card">
+                        <div class="card-cover">
+                            <img src="images/certificates/GRCTraining.jfif" alt="GRC Training">
+                        </div>
+                        <div class="card-content">
+                            <h2>Training on Governance, Risk, and Compliance</h2>
+                            <p>Participant (February 2025, Sarajevo)</p>
+                            <p>GRC in Cyber Security</p>
+                            <p><i>TAG International, W4C B&H</i></p>
+                            <a href="https://www.linkedin.com/posts/ajla-brdarevi%C4%87_i-would-like-to-express-my-gratitude-to-tag-activity-7300268106399023107-aIOn?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXwWfIBIdF-OADO3Tg81YP00IQAtHfE308" target="_blank">More...</a>
+                        </div>
+                    </div>
+                 <div class="card">
+                        <div class="card-cover">
+                            <img src="images/certificates/HackTheBox.jfif" alt="Helem Nejse Talent Akademija">
+                        </div>
+                        <div class="card-content">
+                            <h2>Women In Cyber Security</h2>
+                            <p>Participant (December 2024, Sarajevo)</p>
+                            <p>Empowerment & Career Transition Event</p>
+                            <p><i>HackTheBox, CRDF Global, W4C</i></p>
+                            <a href="https://www.linkedin.com/posts/ajla-brdarevi%C4%87_cybersecurity-women4cyber-hackthebox-activity-7274465189020725249-xbKW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADXwWfIBIdF-OADO3Tg81YP00IQAtHfE308" target="_blank">More...</a>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-cover">
                             <img src="images/certificates/hnta.jpeg" alt="Helem Nejse Talent Akademija">
@@ -192,7 +249,7 @@ listItems.forEach((item, index) => {
                         <div class="card-content">
                             <h2>Helem Nejse Talent Academy</h2>
                             <p>Participant (August 2024, Sarajevo)</p>
-                            <p>Odgovorno kodiranje</p>
+                            <p>Civic Tech</p>
                             <p><i>Fondacija Ekipa</i></p>
                             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7236418630475776000/" target="_blank">More...</a>
                         </div>
@@ -404,7 +461,7 @@ listItems.forEach((item, index) => {
                 break;
 
             //Awards
-            case 5:
+            case 6:
                 content = `
                 <div class="hackathon-experience">
                     <div class="hackathon-content">
@@ -427,7 +484,7 @@ listItems.forEach((item, index) => {
                 break;
 
             //Organzations
-            case 6:
+            case 7:
                 content = `
                 <div class="organizations-experience">
                     <div class="organization-content">
@@ -481,7 +538,7 @@ listItems.forEach((item, index) => {
                 break;
 
             //Hobbies
-            case 7:
+            case 8:
                 content = `
                     <div class="hobbies">
                         <img src="images/ballet.jpg">
@@ -505,7 +562,7 @@ listItems.forEach((item, index) => {
                 break;
 
             //Aspiration
-            case 8:
+            case 9:
                 content = `
                     <div class="aspirations">
                         <p>Currently, I am open to exploring a wide range of career opportunities within the field of
