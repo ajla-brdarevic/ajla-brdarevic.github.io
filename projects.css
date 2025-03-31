@@ -116,7 +116,7 @@ nav {
 }
 
 .project p {
-  text-align: justify;
+  text-align: left;
   max-width: 250px;
   margin-left: 6%;
   color: #fafafa;
