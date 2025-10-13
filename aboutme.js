@@ -173,9 +173,19 @@ listItems.forEach((item, index) => {
             case 3:
                 content = `
                 <div class="experience-timeline">
+
                     <div class="experience-item">
-                        <div class="experience-date">December 2024 - February 2025</div>
-                            <h3>- Toolbox BiH - ASA Banka - Mastercard - Customer Experience Assistant - Contract</h3>
+                        <div class="experience-date">July 2025 - August 2025 <br> Zenica, Federation of Bosnia and Herzegovina, Bosnia and Herzegovina</div>
+                            <h3>Harmony Group - Internship</h3>
+                            <ul>
+                                <li>Completed a two-month internship focused on low-code development with OutSystems ODC</li>
+                                <li>Gained hands-on experience through a demo project for caretaker appointment tracking, where appointments were initiated by scanning client barcodes, and technicians used the app to monitor schedules, visit times, and locations.</li>
+                            </p>
+                        </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">December 2024 - February 2025 <br> Zenica, Federation of Bosnia and Herzegovina, Bosnia and Herzegovina</div>
+                            <h3>Toolbox BiH - ASA Banka - Mastercard - Customer Experience Assistant - Contract</h3>
                             <p> 2-months project aimed at transitioning clients from traditional cash desk services to ATM usage. My role involved:
                             <ul>
                                 <li>Communicating with bank clients to educate them on the functionality and security of using ATMs.</li>
@@ -185,8 +195,8 @@ listItems.forEach((item, index) => {
                         </div>
 
                     <div class="experience-item">
-                        <div class="experience-date">August 2023 - September 2023</div>
-                            <h3>- BH Telecom - internship</h3>
+                        <div class="experience-date">August 2023 - September 2023 <br> Zenica, Federation of Bosnia and Herzegovina, Bosnia and Herzegovina</div>
+                            <h3>BH Telecom - internship</h3>
                             <p>I undertook a one-month internship at BH Telecom, Zenica, in the Department for Technical Support. I participated in optical cable testing 
                             and fieldwork with the Office for Access Networks and Terminal Equipment, gaining valuable technical skills and insights into corporate operations.
                             </p>
